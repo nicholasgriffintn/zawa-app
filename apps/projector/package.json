@@ -1,0 +1,24 @@
+{
+  "name": "@zawa/projector",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --persist-to ../../.wrangler/state",
+    "deploy": "wrangler deploy",
+    "build": "tsc -p tsconfig.json --noEmit",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "echo \"I don't need tests, I don't want tests. Do not add them.\" && exit 0"
+  },
+  "dependencies": {
+    "@zawa/db": "workspace:*",
+    "@zawa/domain": "workspace:*",
+    "@zawa/ontology": "workspace:*",
+    "@zawa/rdm": "workspace:*",
+    "@zawa/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:",
+    "typescript": "catalog:",
+    "wrangler": "catalog:"
+  }
+}

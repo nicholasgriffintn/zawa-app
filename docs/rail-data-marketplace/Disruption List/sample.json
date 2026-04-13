@@ -1,0 +1,51 @@
+[
+  {
+    "generatedAt": "2026-06-12T19:27:46.3918955+01:00",
+    "crs": "LST",
+    "disruptions": [
+      {
+        "id": 179659,
+        "category": "Station",
+        "severity": "Normal",
+        "isSuppressed": false,
+        "xhtmlMessage": "\nThe lifts are currently out of order between the concourse and street level at London Liverpool Street station.",
+        "description": "SF Lift - London Liverpool St"
+      },
+      {
+        "id": 179660,
+        "category": "Station",
+        "severity": "Normal",
+        "isSuppressed": false,
+        "xhtmlMessage": "\nEscalators between the Bishopsgate and Liverpool Street entrances are currently reduced at London Liverpool Street station.",
+        "description": "SF Esc - London Liverpool St"
+      },
+      {
+        "id": 179829,
+        "category": "Train service",
+        "severity": "Minor",
+        "isSuppressed": false,
+        "xhtmlMessage": "\nTrains between London Liverpool Street / Stratford (London) and Brimsdown may be cancelled, delayed by up to 35 minutes or revised. More details can be found in <a href=\"https://www.nationalrail.co.uk/service-disruptions/meridian-water-20260612/\">Status and Disruptions</a>. ",
+        "description": "P2 #MeridianWater"
+      }
+    ],
+    "Xmlns": {
+      "Count": 2
+    }
+  },
+  {
+    "generatedAt": "2026-06-12T19:27:46.3918955+01:00",
+    "crs": "PAD",
+    "disruptions": [],
+    "Xmlns": {
+      "Count": 2
+    }
+  },
+  {
+    "generatedAt": "2026-06-12T19:27:46.3918955+01:00",
+    "crs": "CWX",
+    "disruptions": [],
+    "Xmlns": {
+      "Count": 2
+    }
+  }
+]

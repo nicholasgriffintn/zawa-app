@@ -1,0 +1,31 @@
+{
+  "name": "@zawa/rdm",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./http": "./src/http.ts",
+    "./ldb": "./src/ldb.ts",
+    "./projection-events": "./src/projection-events.ts",
+    "./raw-events": "./src/raw-events.ts",
+    "./reference": "./src/reference.ts",
+    "./realtime": "./src/realtime.ts",
+    "./services": "./src/services.ts",
+    "./streaming": "./src/streaming.ts",
+    "./train-movements": "./src/train-movements.ts",
+    "./xml-products": "./src/xml-products.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "test": "echo \"I don't need tests, I don't want tests. Do not add them.\" && exit 0"
+  },
+  "dependencies": {
+    "@zawa/domain": "workspace:*",
+    "@zawa/shared": "workspace:*",
+    "fast-xml-parser": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:",
+    "typescript": "catalog:"
+  }
+}

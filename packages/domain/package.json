@@ -1,0 +1,23 @@
+{
+  "name": "@zawa/domain",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./api": "./src/api.ts",
+    "./events": "./src/events.ts",
+    "./keys": "./src/keys.ts",
+    "./rdm-products": "./src/rdm-products.ts",
+    "./schemas": "./src/schemas.ts",
+    "./time": "./src/time.ts"
+  },
+  "scripts": {
+    "test": "echo \"I don't need tests, I don't want tests. Do not add them.\" && exit 0"
+  },
+  "dependencies": {
+    "@zawa/shared": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@zawa/db",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./d1": "./src/d1.ts",
+    "./queries/service-stops": "./src/queries/service-stops.ts",
+    "./queries/services": "./src/queries/services.ts",
+    "./queries/stations": "./src/queries/stations.ts",
+    "./queries/dashboard": "./src/queries/dashboard.ts",
+    "./queries/operational-data": "./src/queries/operational-data.ts",
+    "./queries/ontology": "./src/queries/ontology.ts",
+    "./queries/processed-events": "./src/queries/processed-events.ts",
+    "./queries/rdm-raw-events": "./src/queries/rdm-raw-events.ts",
+    "./queries/ingest-health": "./src/queries/ingest-health.ts",
+    "./queries/reference-data": "./src/queries/reference-data.ts",
+    "./queries/service-formations": "./src/queries/service-formations.ts"
+  },
+  "scripts": {
+    "test": "echo \"I don't need tests, I don't want tests. Do not add them.\" && exit 0"
+  }
+}

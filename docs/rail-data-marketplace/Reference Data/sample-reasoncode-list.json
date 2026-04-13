@@ -1,0 +1,18 @@
+[
+  {
+    "code": 501,
+    "lateReason": "This service has been delayed by a broken down train",
+    "cancReason": "This service has been cancelled because of a broken down train",
+    "Xmlns": {
+      "Count": 2
+    }
+  },
+  {
+    "code": 502,
+    "lateReason": "This service has been delayed by a broken windscreen on the train",
+    "cancReason": "This service has been cancelled because of a broken windscreen on the train",
+    "Xmlns": {
+      "Count": 2
+    }
+  }
+]

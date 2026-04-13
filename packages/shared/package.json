@@ -1,0 +1,22 @@
+{
+  "name": "@zawa/shared",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./time": "./src/time.ts",
+    "./ids": "./src/ids.ts",
+    "./hash": "./src/hash.ts",
+    "./html": "./src/html.ts",
+    "./env": "./src/env.ts",
+    "./async": "./src/async.ts",
+    "./json": "./src/json.ts",
+    "./values": "./src/values.ts",
+    "./http": "./src/http.ts"
+  },
+  "scripts": {
+    "test": "echo \"I don't need tests, I don't want tests. Do not add them.\" && exit 0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "catalog:"
+  }
+}

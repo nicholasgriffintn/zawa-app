@@ -1,0 +1,45 @@
+{
+  "destination": {
+    "name": "Consumer.rdmportal.VirtualTopic.PushPort-v18",
+    "destinationType": "queue"
+  },
+  "messageID": "ID:liv1-dwnpp102-60855-639144245502761012-1:22:1:1:55971843",
+  "type": null,
+  "priority": 5,
+  "redelivered": false,
+  "messageType": "bytes",
+  "deliveryMode": 1,
+  "bytes": "{\"ts\":\"2026-06-12T17:56:27.5809252+01:00\",\"version\":\"18.0\",\"uR\":{\"updateOrigin\":\"TD\",\"TS\":{\"rid\":\"202606127126585\",\"uid\":\"G26585\",\"ssd\":\"2026-06-12\",\"Location\":{\"tpl\":\"SUTTON\",\"wta\":\"17:55:30\",\"wtd\":\"17:56:30\",\"pta\":\"17:56\",\"ptd\":\"17:56\",\"arr\":{\"at\":\"17:54\",\"atClass\":\"Automatic\",\"src\":\"TD\"},\"dep\":{\"at\":\"17:56\",\"atClass\":\"Automatic\",\"src\":\"TD\"},\"plat\":{\"platsrc\":\"A\",\"conf\":\"true\",\"\":\"1\"},\"length\":\"10\"}}}}",
+  "replyTo": null,
+  "correlationID": null,
+  "expiration": 1781283987580,
+  "text": null,
+  "map": null,
+  "properties": {
+    "Username": {
+      "boolean": null,
+      "string": "thales",
+      "byte": null,
+      "double": null,
+      "bytes": null,
+      "propertyType": "string",
+      "short": null,
+      "integer": null,
+      "float": null,
+      "long": null
+    },
+    "PushPortSequence": {
+      "boolean": null,
+      "string": "5971842",
+      "byte": null,
+      "double": null,
+      "bytes": null,
+      "propertyType": "string",
+      "short": null,
+      "integer": null,
+      "float": null,
+      "long": null
+    }
+  },
+  "timestamp": 1781283387580
+}

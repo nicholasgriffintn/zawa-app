@@ -1,0 +1,97 @@
+.metric-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.metric-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.metric-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.metric-card {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  min-height: 88px;
+  padding: 14px;
+  background: linear-gradient(180deg, #0c171d, #071116);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.metric-card-link {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.metric-card-link::after {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: var(--accent);
+  content: ">";
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.metric-card-link:hover {
+  border-color: var(--accent);
+}
+
+.metric-card span,
+.metric-card small {
+  color: var(--muted);
+}
+
+.metric-card span {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.metric-card strong {
+  align-self: end;
+  font-size: 28px;
+  line-height: 1;
+}
+
+.metric-grid-2 .metric-card {
+  min-height: 112px;
+  padding: 18px;
+}
+
+.metric-grid-2 .metric-card strong {
+  font-size: 34px;
+}
+
+.metric-card.good {
+  border-color: rgb(46 227 111 / 32%);
+}
+
+.metric-card.warn {
+  border-color: rgb(243 201 105 / 42%);
+}
+
+.metric-card.bad {
+  border-color: rgb(255 123 123 / 42%);
+}
+
+@media (max-width: 1120px) {
+  .metric-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .metric-grid-2,
+  .metric-grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

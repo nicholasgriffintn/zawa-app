@@ -1,0 +1,56 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zawa-projector",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-13",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "dev": {
+    "port": 8788,
+    "inspector_port": 9232
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zawa",
+      "database_id": "05f7f789-f869-45c3-a1fb-d9fe896800d5",
+      "preview_database_id": "f0f89855-89c2-463c-a3eb-42d2d47ab39c",
+      "migrations_table": "d1_migrations",
+      "migrations_dir": "../../packages/db/src/migrations"
+    }
+  ],
+  "queues": {
+    "consumers": [
+      {
+        "queue": "rail-events",
+        "max_batch_size": 100,
+        "max_batch_timeout": 3,
+        "max_retries": 10
+      }
+    ]
+  },
+  "vars": {
+    "RDM_LDB_ARR_DEP_WITH_DETAILS_URL": "https://api1.raildata.org.uk/1010-live-arrival-and-departure-boards-arr-and-dep1_1/LDBWS/api/20220120/GetArrDepBoardWithDetails/{crs}"
+  },
+  "secrets": {
+    "required": ["RDM_LDB_API_KEY"]
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "StationBoardDO",
+        "name": "STATION_BOARD_DO",
+        "script_name": "zawa-edge"
+      },
+      {
+        "class_name": "ServiceDO",
+        "name": "SERVICE_DO",
+        "script_name": "zawa-edge"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NSI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://internal.nationalrail.co.uk/xml/XsdSchemas/External/Version4.0/nre-service-indicator-v4-0.xsd" xmlns="http://nationalrail.co.uk/xml/serviceindicator">
+  <TOC>
+    <TocCode>LE</TocCode>
+    <TocName>Greater Anglia</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Disruption between London Liverpool Street / Stratford (London) and Brimsdown]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>88F7A9640547488292B5CC74EAD9CC8E</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/broxbourne-20260410/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>475B4DFCF4774669AD8AB9859576DF47</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/meridian-water-20260612/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>greateranglia</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+</NSI>

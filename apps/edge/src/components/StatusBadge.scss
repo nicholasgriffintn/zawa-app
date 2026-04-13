@@ -1,0 +1,54 @@
+.connection-pill,
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.connection-pill {
+  color: var(--warn);
+}
+
+.connection-pill.live {
+  color: #06110d;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.status-badge {
+  width: max-content;
+  max-width: 100%;
+  min-height: 30px;
+  font-size: 11px;
+}
+
+.status-badge.good {
+  color: #06110d;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.status-badge.warn {
+  color: #241800;
+  background: var(--warn);
+  border-color: var(--warn);
+}
+
+.status-badge.bad {
+  color: #260303;
+  background: var(--bad);
+  border-color: var(--bad);
+}
+
+.status-badge.neutral {
+  color: var(--neutral);
+}

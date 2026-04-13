@@ -1,0 +1,45 @@
+{
+  "destination": {
+    "name": "Consumer.rdmportal.VirtualTopic.PushPort-v18",
+    "destinationType": "queue"
+  },
+  "messageID": "ID:liv1-dwnpp102-60855-639144245502761012-1:22:1:1:55971841",
+  "type": null,
+  "priority": 5,
+  "redelivered": false,
+  "messageType": "bytes",
+  "deliveryMode": 1,
+  "bytes": "{\"ts\":\"2026-06-12T17:56:27.488925+01:00\",\"version\":\"18.0\",\"uR\":{\"updateOrigin\":\"TD\",\"TS\":{\"rid\":\"202606128004981\",\"uid\":\"P04981\",\"ssd\":\"2026-06-12\",\"Location\":[{\"tpl\":\"LNDNBDE\",\"wtp\":\"17:59\",\"pass\":{\"et\":\"17:57\",\"src\":\"TD\"},\"plat\":{\"platsup\":\"true\",\"cisPlatsup\":\"true\",\"\":\"3\"},\"length\":\"8\"},{\"tpl\":\"BORMRKJ\",\"wtp\":\"18:01\",\"pass\":{\"et\":\"17:58\",\"src\":\"Darwin\"},\"length\":\"8\"},{\"tpl\":\"CANONST\",\"wta\":\"18:03\",\"arr\":{\"et\":\"18:00\",\"src\":\"Darwin\"},\"length\":\"8\"}]}}}",
+  "replyTo": null,
+  "correlationID": null,
+  "expiration": 1781283987488,
+  "text": null,
+  "map": null,
+  "properties": {
+    "Username": {
+      "boolean": null,
+      "string": "thales",
+      "byte": null,
+      "double": null,
+      "bytes": null,
+      "propertyType": "string",
+      "short": null,
+      "integer": null,
+      "float": null,
+      "long": null
+    },
+    "PushPortSequence": {
+      "boolean": null,
+      "string": "5971840",
+      "byte": null,
+      "double": null,
+      "bytes": null,
+      "propertyType": "string",
+      "short": null,
+      "integer": null,
+      "float": null,
+      "long": null
+    }
+  },
+  "timestamp": 1781283387488
+}

@@ -1,0 +1,483 @@
+{
+  "trainServices": [
+    {
+      "previousCallingPoints": [
+        {
+          "callingPoint": [
+            {
+              "locationName": "Cambridge North",
+              "crs": "CMB",
+              "st": "17:10",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Cambridge",
+              "crs": "CBG",
+              "st": "17:17",
+              "at": "17:21",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Shelford",
+              "crs": "SED",
+              "st": "17:24",
+              "at": "17:27",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Whittlesford Parkway",
+              "crs": "WLF",
+              "st": "17:28",
+              "at": "17:31",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Great Chesterford",
+              "crs": "GRC",
+              "st": "17:32",
+              "at": "17:35",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Audley End",
+              "crs": "AUD",
+              "st": "17:38",
+              "at": "17:41",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Newport (Essex)",
+              "crs": "NWE",
+              "st": "17:41",
+              "at": "17:43",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Elsenham",
+              "crs": "ESM",
+              "st": "17:46",
+              "at": "17:49",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Stansted Mountfitchet",
+              "crs": "SST",
+              "st": "17:51",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Bishops Stortford",
+              "crs": "BIS",
+              "st": "17:57",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Sawbridgeworth",
+              "crs": "SAW",
+              "st": "18:02",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Harlow Mill",
+              "crs": "HWM",
+              "st": "18:05",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Harlow Town",
+              "crs": "HWN",
+              "st": "18:08",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Broxbourne",
+              "crs": "BXB",
+              "st": "18:14",
+              "at": "18:16",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Cheshunt",
+              "crs": "CHN",
+              "st": "18:18",
+              "at": "18:20",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Tottenham Hale",
+              "crs": "TOM",
+              "st": "18:27",
+              "at": "19:37",
+              "isCancelled": false,
+              "length": 5,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            }
+          ],
+          "serviceType": "train",
+          "serviceChangeRequired": false,
+          "assocIsCancelled": false
+        }
+      ],
+      "futureCancellation": false,
+      "futureDelay": false,
+      "origin": [
+        {
+          "locationName": "Cambridge North",
+          "crs": "CMB",
+          "assocIsCancelled": false
+        }
+      ],
+      "destination": [
+        {
+          "locationName": "London Liverpool Street",
+          "crs": "LST",
+          "assocIsCancelled": false
+        }
+      ],
+      "rsid": "LE065100",
+      "sta": "18:43",
+      "eta": "19:48",
+      "platform": "6",
+      "operator": "Greater Anglia",
+      "operatorCode": "LE",
+      "isCircularRoute": false,
+      "isCancelled": false,
+      "filterLocationCancelled": false,
+      "serviceType": "train",
+      "length": 5,
+      "detachFront": false,
+      "isReverseFormation": false,
+      "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+      "serviceID": "4029337LIVST___"
+    },
+    {
+      "previousCallingPoints": [
+        {
+          "callingPoint": [
+            {
+              "locationName": "Stansted Airport",
+              "crs": "SSD",
+              "st": "17:58",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 12,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Bishops Stortford",
+              "crs": "BIS",
+              "st": "18:07",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 12,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Tottenham Hale",
+              "crs": "TOM",
+              "st": "18:30",
+              "et": "19:40",
+              "isCancelled": false,
+              "length": 12,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            }
+          ],
+          "serviceType": "train",
+          "serviceChangeRequired": false,
+          "assocIsCancelled": false
+        }
+      ],
+      "futureCancellation": false,
+      "futureDelay": false,
+      "origin": [
+        {
+          "locationName": "Stansted Airport",
+          "crs": "SSD",
+          "assocIsCancelled": false
+        }
+      ],
+      "destination": [
+        {
+          "locationName": "London Liverpool Street",
+          "crs": "LST",
+          "assocIsCancelled": false
+        }
+      ],
+      "sta": "18:45",
+      "eta": "19:53",
+      "platform": "4",
+      "operator": "Greater Anglia",
+      "operatorCode": "LE",
+      "isCircularRoute": false,
+      "isCancelled": false,
+      "filterLocationCancelled": false,
+      "serviceType": "train",
+      "length": 12,
+      "detachFront": false,
+      "isReverseFormation": false,
+      "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+      "serviceID": "4029277LIVST___"
+    },
+    {
+      "previousCallingPoints": [
+        {
+          "callingPoint": [
+            {
+              "locationName": "Hertford East",
+              "crs": "HFE",
+              "st": "18:06",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Ware",
+              "crs": "WAR",
+              "st": "18:10",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "St Margarets (Hertfordshire)",
+              "crs": "SMT",
+              "st": "18:14",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Rye House",
+              "crs": "RYH",
+              "st": "18:17",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Broxbourne",
+              "crs": "BXB",
+              "st": "18:22",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Cheshunt",
+              "crs": "CHN",
+              "st": "18:26",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Waltham Cross",
+              "crs": "WLC",
+              "st": "18:29",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Enfield Lock",
+              "crs": "ENL",
+              "st": "18:31",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Brimsdown",
+              "crs": "BMD",
+              "st": "18:34",
+              "at": "On time",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Ponders End",
+              "crs": "PON",
+              "st": "18:36",
+              "at": "19:32",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Tottenham Hale",
+              "crs": "TOM",
+              "st": "18:42",
+              "et": "19:37",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            },
+            {
+              "locationName": "Hackney Downs",
+              "crs": "HAC",
+              "st": "18:48",
+              "et": "19:42",
+              "isCancelled": false,
+              "length": 10,
+              "detachFront": false,
+              "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+              "affectedByDiversion": false,
+              "rerouteDelay": 0
+            }
+          ],
+          "serviceType": "train",
+          "serviceChangeRequired": false,
+          "assocIsCancelled": false
+        }
+      ],
+      "futureCancellation": false,
+      "futureDelay": false,
+      "origin": [
+        {
+          "locationName": "Hertford East",
+          "crs": "HFE",
+          "assocIsCancelled": false
+        }
+      ],
+      "destination": [
+        {
+          "locationName": "London Liverpool Street",
+          "crs": "LST",
+          "assocIsCancelled": false
+        }
+      ],
+      "sta": "18:58",
+      "eta": "19:49",
+      "platform": "1",
+      "operator": "Greater Anglia",
+      "operatorCode": "LE",
+      "isCircularRoute": false,
+      "isCancelled": false,
+      "filterLocationCancelled": false,
+      "serviceType": "train",
+      "length": 10,
+      "detachFront": false,
+      "isReverseFormation": false,
+      "delayReason": "This service has been delayed by trespassers on the railway earlier today",
+      "serviceID": "4029476LIVST___"
+    }
+  ]
+}

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NSI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="http://internal.nationalrail.co.uk/xml/XsdSchemas/External/Version4.0/nre-service-indicator-v4-0.xsd" xmlns="http://nationalrail.co.uk/xml/serviceindicator">
+  <TOC>
+    <TocCode>VT</TocCode>
+    <TocName>Avanti West Coast</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Disruption between Nuneaton and Rugby]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>25527392B206464A99B9BEDEDFDE7685</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/birmingham-new-street-20260524/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>FD830054D9614295B66D3E7694688E33</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/nuneaton-20260611/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>AvantiWestCoast</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>CC</TocCode>
+    <TocName>c2c</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>c2c_Rail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>CS</TocCode>
+    <TocName>Caledonian Sleeper</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>CalSleeper</TwitterAccount>
+    <AdditionalInfo><![CDATA[Follow us on Twitter]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>CH</TocCode>
+    <TocName>Chiltern Railways</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>chilternrailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>XC</TocCode>
+    <TocName>CrossCountry</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>E3A6FA7E168442559141052D09F6334C</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/gloucester-20260305/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>24CEE3FF6572469087BED950A3560D4C</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/shawford-20260505/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>25527392B206464A99B9BEDEDFDE7685</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/birmingham-new-street-20260524/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>crosscountryuk</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>EM</TocCode>
+    <TocName>East Midlands Railway</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>EastMidRailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>XR</TocCode>
+    <TocName>Elizabeth line</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>4094772EBB5C4F6CA16C7274EE095514</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/heathrow-terminals-20260305/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>TFL</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>ES</TocCode>
+    <TocName>Eurostar</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>EurostarUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GX</TocCode>
+    <TocName>Gatwick Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>GatwickExpress</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GC</TocCode>
+    <TocName>Grand Central</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>GC_Rail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GN</TocCode>
+    <TocName>Great Northern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>GNRailUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GW</TocCode>
+    <TocName>Great Western Railway</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>E3A6FA7E168442559141052D09F6334C</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/gloucester-20260305/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>GWRHelp</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LE</TocCode>
+    <TocName>Greater Anglia</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Disruption between London Liverpool Street / Stratford (London) and Brimsdown]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>88F7A9640547488292B5CC74EAD9CC8E</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/broxbourne-20260410/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>475B4DFCF4774669AD8AB9859576DF47</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/meridian-water-20260612/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>greateranglia</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>HX</TocCode>
+    <TocName>Heathrow Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>HeathrowExpress</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>HT</TocCode>
+    <TocName>Hull Trains</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>Hull_Trains</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>IL</TocCode>
+    <TocName>Island Line</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>SW_Help</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>GR</TocCode>
+    <TocName>LNER</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>LNER</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LN</TocCode>
+    <TocName>London Northwestern Railway</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Disruption between Nuneaton and Rugby]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>25527392B206464A99B9BEDEDFDE7685</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/birmingham-new-street-20260524/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>FD830054D9614295B66D3E7694688E33</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/nuneaton-20260611/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>LNRailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LO</TocCode>
+    <TocName>London Overground</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>TfL</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>LD</TocCode>
+    <TocName>Lumo</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>LumoTravel</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>ME</TocCode>
+    <TocName>Merseyrail</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>Merseyrail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>NT</TocCode>
+    <TocName>Northern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>northernassist</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SR</TocCode>
+    <TocName>ScotRail</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>ScotRail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SW</TocCode>
+    <TocName>South Western Railway</TocName>
+    <Status>Custom</Status>
+    <StatusImage>icon-note-noshadow.png</StatusImage>
+    <StatusDescription><![CDATA[Disruption between Bentley (Hampshire) and Alton]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>3FCC4A35B53C4FB3832CA46540701E7C</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/overton-20260327/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>8554E19FAAFF4ADCBA1ADC00BC3E7C63</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/raynes-park-20260417/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>24CEE3FF6572469087BED950A3560D4C</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/shawford-20260505/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>68924DE82BF04C2699070F164C671BA6</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/vauxhall-20260605/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>8074207D9E0F4F519E7284447F8AE1F1</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/alton-20260612/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>SW_Help</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SE</TocCode>
+    <TocName>Southeastern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>Se_Railway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SN</TocCode>
+    <TocName>Southern</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>SouthernRailUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>SX</TocCode>
+    <TocName>Stansted Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>88F7A9640547488292B5CC74EAD9CC8E</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/broxbourne-20260410/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>475B4DFCF4774669AD8AB9859576DF47</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/meridian-water-20260612/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>Stansted_Exp</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>TL</TocCode>
+    <TocName>Thameslink</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>TLRailUK</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>TP</TocCode>
+    <TocName>TransPennine Express</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <TwitterAccount>TPEassist</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>AW</TocCode>
+    <TocName>Transport for Wales</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>E3A6FA7E168442559141052D09F6334C</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/gloucester-20260305/</CustomURL>
+    </ServiceGroup>
+    <ServiceGroup>
+      <CurrentDisruption>25527392B206464A99B9BEDEDFDE7685</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/birmingham-new-street-20260524/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>tfwrail</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+  <TOC>
+    <TocCode>WM</TocCode>
+    <TocName>West Midlands Railway</TocName>
+    <Status>Good service</Status>
+    <StatusImage>icon-tick2.png</StatusImage>
+    <StatusDescription><![CDATA[Good service]]></StatusDescription>
+    <ServiceGroup>
+      <CurrentDisruption>25527392B206464A99B9BEDEDFDE7685</CurrentDisruption>
+      <CustomDetail><![CDATA[Read about this disruption]]></CustomDetail>
+      <CustomURL>https://www.nationalrail.co.uk/service-disruptions/birmingham-new-street-20260524/</CustomURL>
+    </ServiceGroup>
+    <TwitterAccount>WestMidRailway</TwitterAccount>
+    <AdditionalInfo><![CDATA[Latest travel news]]></AdditionalInfo>
+  </TOC>
+</NSI>

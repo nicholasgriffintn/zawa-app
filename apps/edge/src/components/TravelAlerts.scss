@@ -1,0 +1,193 @@
+.home-alert-list {
+  display: grid;
+  gap: 10px;
+}
+
+.home-alert-card {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  padding: 14px;
+  color: var(--text);
+  text-align: left;
+  background: #081217;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.home-alert-card:hover,
+.home-alert-card:focus-visible {
+  border-color: var(--warn);
+  background: #101b1f;
+}
+
+.home-alert-card span {
+  color: var(--warn);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.home-alert-card small {
+  color: var(--muted);
+}
+
+.service-sidebar-content > .travel-alert-button {
+  margin-top: 0;
+}
+
+.travel-alert-button {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  padding: 10px 12px;
+  color: var(--text);
+  background: rgb(243 201 105 / 7%);
+  border: 1px solid rgb(243 201 105 / 34%);
+  border-radius: 4px;
+}
+
+.travel-alert-button:hover {
+  background: rgb(243 201 105 / 12%);
+}
+
+.travel-alert-button span {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.travel-alert-button strong {
+  color: var(--warn);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(1 5 7 / 76%);
+}
+
+.travel-alert-modal {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  width: min(680px, 100%);
+  max-height: min(760px, calc(100dvh - 48px));
+  overflow: hidden;
+  background: rgb(7 16 20 / 98%);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 24px 80px rgb(0 0 0 / 64%);
+}
+
+.travel-alert-modal header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.travel-alert-modal h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.travel-alert-modal header button {
+  min-height: 34px;
+  padding: 0 12px;
+  color: var(--text);
+  background: var(--panel-strong);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.travel-alert-list {
+  display: grid;
+  gap: 10px;
+  min-height: 0;
+  padding: 18px;
+  overflow-y: auto;
+}
+
+.travel-alert-card {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  background: #081217;
+  border: 1px solid rgb(243 201 105 / 34%);
+  border-radius: 4px;
+}
+
+.travel-alert-card div {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 8px;
+  align-items: start;
+}
+
+.travel-alert-card > span {
+  color: var(--warn);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.travel-alert-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+  white-space: pre-line;
+}
+
+.travel-alert-card small {
+  color: var(--muted);
+}
+
+.travel-alert-card a {
+  color: #42a7ff;
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .modal-backdrop {
+    align-items: end;
+    padding: 0;
+  }
+
+  .travel-alert-modal {
+    width: 100%;
+    max-height: 88dvh;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.travel-alert-button .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--warn);
+}
+
+.travel-alert-card .icon {
+  width: 16px;
+  height: 16px;
+  color: var(--warn);
+}

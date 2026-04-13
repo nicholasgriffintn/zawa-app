@@ -1,0 +1,176 @@
+.home-station-card {
+  display: grid;
+  min-width: 0;
+  background: #0f1715;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.home-service-row:hover,
+.home-station-card:hover {
+  border-color: var(--accent);
+}
+
+.home-station-card span,
+.home-station-card small {
+  color: var(--muted);
+}
+
+.home-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.55fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.home-station-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.45fr) minmax(0, 0.55fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.home-panel-heading {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.home-service-filter {
+  display: grid;
+  gap: 6px;
+  min-width: min(300px, 42%);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.home-service-filter input {
+  min-width: 0;
+  height: 38px;
+  color: var(--text);
+  background: #0b151b;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  outline: none;
+  padding: 0 12px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.home-service-filter input:focus {
+  border-color: var(--accent);
+}
+
+.home-service-list,
+.home-station-list {
+  display: grid;
+  gap: 10px;
+}
+
+.home-service-row {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  min-height: 68px;
+  padding: 12px 14px;
+  background: #081217;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.home-service-row time {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.home-service-row strong,
+.home-service-row > div span {
+  display: block;
+  min-width: 0;
+}
+
+.home-service-row div span {
+  margin-top: 4px;
+  color: var(--muted);
+}
+
+.home-service-row > .status-badge {
+  justify-self: end;
+  min-width: 74px;
+  min-height: 28px;
+  padding: 0 10px;
+  font-size: 12px;
+}
+
+.home-empty-state {
+  display: grid;
+  gap: 8px;
+  min-height: 140px;
+  place-content: center;
+  padding: 22px;
+  color: var(--muted);
+  text-align: center;
+  background: #071116;
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+}
+
+.home-empty-state strong {
+  color: var(--text);
+}
+
+.home-station-list {
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+
+.home-station-card {
+  display: grid;
+  gap: 8px;
+  min-height: 92px;
+  padding: 16px;
+}
+
+.home-station-card strong {
+  font-size: 26px;
+}
+
+@media (max-width: 1120px) {
+  .home-main-grid,
+  .home-station-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-station-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .home-panel-heading,
+  .home-service-row {
+    display: grid;
+  }
+
+  .home-service-filter {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .home-service-row {
+    grid-template-columns: 1fr;
+  }
+
+  .home-service-row {
+    align-items: start;
+  }
+
+  .home-station-grid {
+    grid-template-columns: 1fr;
+  }
+}

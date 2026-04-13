@@ -1,0 +1,21 @@
+.app-page {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-content: start;
+  width: 100%;
+  min-height: calc(100dvh - var(--shell-chrome-height));
+  margin: 0 auto;
+  padding: 18px;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 18% 0%, rgb(46 227 111 / 10%), transparent 360px),
+    radial-gradient(circle at 82% 8%, rgb(47 127 255 / 9%), transparent 320px),
+    linear-gradient(180deg, rgb(5 12 16 / 96%), rgb(2 8 11 / 98%));
+}
+
+@media (max-width: 760px) {
+  .app-page {
+    padding: 16px;
+  }
+}

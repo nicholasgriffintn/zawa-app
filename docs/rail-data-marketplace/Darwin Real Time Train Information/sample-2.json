@@ -1,0 +1,45 @@
+{
+  "destination": {
+    "name": "Consumer.rdmportal.VirtualTopic.PushPort-v18",
+    "destinationType": "queue"
+  },
+  "messageID": "ID:liv1-dwnpp102-60855-639144245502761012-1:22:1:1:55971842",
+  "type": null,
+  "priority": 5,
+  "redelivered": false,
+  "messageType": "bytes",
+  "deliveryMode": 1,
+  "bytes": "{\"ts\":\"2026-06-12T17:56:27.4989232+01:00\",\"version\":\"18.0\",\"uR\":{\"updateOrigin\":\"CIS\",\"requestSource\":\"at55\",\"requestID\":\"0000000000029369\",\"TS\":{\"rid\":\"202606126738071\",\"uid\":\"C38071\",\"ssd\":\"2026-06-12\",\"Location\":{\"tpl\":\"SVNKNGS\",\"wta\":\"17:54\",\"wtd\":\"17:54:30\",\"pta\":\"17:54\",\"ptd\":\"17:54\",\"arr\":{\"et\":\"17:57\",\"src\":\"Darwin\"},\"dep\":{\"et\":\"17:58\",\"src\":\"Darwin\"},\"plat\":{\"platsrc\":\"A\",\"conf\":\"true\",\"\":\"4\"}}}}}",
+  "replyTo": null,
+  "correlationID": null,
+  "expiration": 1781283987499,
+  "text": null,
+  "map": null,
+  "properties": {
+    "Username": {
+      "boolean": null,
+      "string": "thales",
+      "byte": null,
+      "double": null,
+      "bytes": null,
+      "propertyType": "string",
+      "short": null,
+      "integer": null,
+      "float": null,
+      "long": null
+    },
+    "PushPortSequence": {
+      "boolean": null,
+      "string": "5971841",
+      "byte": null,
+      "double": null,
+      "bytes": null,
+      "propertyType": "string",
+      "short": null,
+      "integer": null,
+      "float": null,
+      "long": null
+    }
+  },
+  "timestamp": 1781283387499
+}

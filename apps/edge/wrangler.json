@@ -1,0 +1,109 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zawa-edge",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-13",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "dev": {
+    "port": 8787,
+    "inspector_port": 9231
+  },
+  "workers_dev": false,
+  "preview_urls": false,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "dist/client",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/health", "/health/*", "/api/*", "/ws", "/ws/*", "/internal/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "zawa",
+      "database_id": "05f7f789-f869-45c3-a1fb-d9fe896800d5",
+      "preview_database_id": "f0f89855-89c2-463c-a3eb-42d2d47ab39c",
+      "migrations_table": "d1_migrations",
+      "migrations_dir": "../../packages/db/src/migrations"
+    }
+  ],
+  "queues": {
+    "producers": [
+      {
+        "queue": "rail-events",
+        "binding": "RAIL_EVENTS_QUEUE"
+      }
+    ]
+  },
+  "triggers": {
+    "crons": []
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "class_name": "StationBoardDO",
+        "name": "STATION_BOARD_DO"
+      },
+      {
+        "class_name": "ServiceDO",
+        "name": "SERVICE_DO"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["FeedSupervisorDO", "StationBoardDO", "ServiceDO"]
+    },
+    {
+      "tag": "v2",
+      "deleted_classes": ["FeedSupervisorDO"]
+    }
+  ],
+  "vars": {
+    "APP_ENV": "dev",
+    "RDM_REALTIME_PRODUCT_CODE": "P-d3bf124c-1058-4040-8a62-87181a877d59",
+    "RDM_LDB_PRODUCT_CODE": "P-2eec03eb-4d53-4955-8a96-0314964a4e9e",
+    "RDM_SERVICE_DETAILS_PRODUCT_CODE": "P-4dec1247-d040-4290-80a4-639dfac54a92",
+    "RDM_QUERY_SERVICES_PRODUCT_CODE": "P-9a4b5235-d06a-483d-b12f-7d0d95b06b18",
+    "RDM_REFERENCE_DATA_PRODUCT_CODE": "P-c73f0d2a-c233-497d-846b-8354e2cac326",
+    "RDM_STATIONS_PRODUCT_CODE": "P-88ffe920-471c-4fd9-8e0d-95d5b9b7a257",
+    "RDM_STATIONS_JSON_PRODUCT_CODE": "P-9c97bd03-e2f2-462d-860a-5bec92700c2d",
+    "RDM_DISRUPTIONS_PRODUCT_CODE": "P-fffd1a4b-9fee-4d07-8102-efa8ce848d81",
+    "RDM_NSI_PRODUCT_CODE": "P-7a5989cb-4600-4727-9ab0-baa7e483a0f2",
+    "RDM_INCIDENTS_PRODUCT_CODE": "P-cf16832d-d971-46e7-8883-4fca2101d3fa",
+    "RDM_TIMETABLE_PRODUCT_CODE": "P-9ca6bc7e-62e1-44d6-b93a-1616f7d2caf8",
+    "RDM_TRAIN_MOVEMENTS_PRODUCT_CODE": "P-826477b8-3789-45e7-85bd-22c4ae9bcfae",
+    "RDM_LDB_ARR_DEP_WITH_DETAILS_URL": "https://api1.raildata.org.uk/1010-live-arrival-and-departure-boards-arr-and-dep1_1/LDBWS/api/20220120/GetArrDepBoardWithDetails/{crs}",
+    "RDM_LDB_ARR_DEP_URL": "https://api1.raildata.org.uk/1010-live-arrival-and-departure-boards-arr-and-dep1_1/LDBWS/api/20220120/GetArrivalDepartureBoard/{crs}",
+    "RDM_SERVICE_DETAILS_URL": "https://api1.raildata.org.uk/1010-service-details1_2/LDBWS/api/20220120/GetServiceDetails/{serviceid}",
+    "RDM_QUERY_SERVICES_URL": "https://api1.raildata.org.uk/1010-query-services-and-service-details1_0/LDBSVWS/api/20220120/QueryServices/{serviceID}/{sdd}",
+    "RDM_QUERY_SERVICE_DETAILS_BY_RID_URL": "https://api1.raildata.org.uk/1010-query-services-and-service-details1_0/LDBSVWS/api/20220120/GetServiceDetailsByRID/{rid}",
+    "RDM_REFERENCE_STATION_LIST_URL": "https://api1.raildata.org.uk/1010-reference-data1_0/LDBSVWS/api/ref/20211101/GetStationList/{currentVersion}",
+    "RDM_REFERENCE_TOC_LIST_URL": "https://api1.raildata.org.uk/1010-reference-data1_0/LDBSVWS/api/ref/20211101/GetTOCList/{currentVersion}",
+    "RDM_REFERENCE_REASON_CODE_LIST_URL": "https://api1.raildata.org.uk/1010-reference-data1_0/LDBSVWS/api/ref/20211101/GetReasonCodeList",
+    "RDM_REFERENCE_LOADING_CATEGORY_URL": "https://api1.raildata.org.uk/1010-reference-data1_0/LDBSVWS/api/ref/20211101/GetLoadingCategoryData/{currentVersion}",
+    "RDM_REFERENCE_SOURCE_INSTANCE_NAMES_URL": "https://api1.raildata.org.uk/1010-reference-data1_0/LDBSVWS/api/ref/20211101/GetSourceInstanceNames",
+    "RDM_STATIONS_TOC_URL": "https://api1.raildata.org.uk/1010-knowlegebase-stations-xml-feed1_1/4.0/stations-{TOC}.xml",
+    "RDM_STATION_BY_CRS_URL": "https://api1.raildata.org.uk/1010-knowlegebase-stations-xml-feed1_1/4.0/station-{CRS}.xml",
+    "RDM_DISRUPTION_LIST_URL": "https://api1.raildata.org.uk/1010-disruption-list1_0/LDBSVWS/api/20220120/GetDisruptionList/{CRSList}",
+    "RDM_NSI_URL": "https://api1.raildata.org.uk/1010-knowlegebase-national-service-indicator-xml-feed2_0/4.0/serviceindicators.xml",
+    "RDM_NSI_TOC_URL": "https://api1.raildata.org.uk/1010-knowlegebase-national-service-indicator-xml-feed2_0/4.0/serviceindicators-{TOC}.xml",
+    "RDM_INCIDENTS_URL": "https://api1.raildata.org.uk/1010-knowlegebase-incidents-xml-feed1_0/incidents.xml",
+    "INGEST_HEARTBEAT_SECONDS": "30"
+  },
+  "secrets": {
+    "required": [
+      "RDM_LDB_API_KEY",
+      "RDM_SERVICE_DETAILS_API_KEY",
+      "RDM_QUERY_SERVICES_API_KEY",
+      "RDM_REFERENCE_DATA_API_KEY",
+      "RDM_STATIONS_API_KEY",
+      "RDM_DISRUPTIONS_API_KEY",
+      "RDM_NSI_API_KEY",
+      "RDM_INCIDENTS_API_KEY"
+    ]
+  }
+}

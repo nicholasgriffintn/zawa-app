@@ -1,0 +1,278 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: minmax(148px, auto) minmax(0, 1fr) minmax(250px, auto);
+  align-items: center;
+  gap: 20px;
+  min-height: var(--topbar-height);
+  padding: 0 20px;
+  background: rgb(1 5 5 / 98%);
+  border-bottom: 1px solid var(--border-strong);
+  backdrop-filter: blur(18px);
+  flex: 0 0 auto;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.topbar-link {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.topbar-link:hover {
+  color: #031009;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.brand-mark {
+  position: relative;
+  width: 36px;
+  height: 34px;
+  border-radius: 0;
+  background: transparent;
+}
+
+.brand-mark::before,
+.brand-mark::after {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 6px;
+  content: "";
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+.brand-mark::before {
+  top: 3px;
+  box-shadow:
+    0 11px 0 var(--accent),
+    0 22px 0 var(--accent);
+}
+
+.brand-mark::after {
+  top: 3px;
+  left: 30px;
+  width: 7px;
+  box-shadow:
+    0 11px 0 var(--accent),
+    0 22px 0 var(--accent);
+}
+
+.brand strong {
+  letter-spacing: 0;
+}
+
+.brand strong {
+  display: block;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.brand small {
+  color: var(--muted);
+}
+
+.brand small {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.topbar-status {
+  display: grid;
+  grid-template-columns: minmax(152px, auto) max-content 36px;
+  align-items: center;
+  gap: 18px;
+  justify-self: end;
+  min-width: 0;
+  color: var(--muted);
+}
+
+.live-dot {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr);
+  column-gap: 8px;
+  align-items: center;
+  min-width: 0;
+}
+
+.live-dot span {
+  width: 8px;
+  height: 8px;
+  background: var(--warn);
+  border-radius: 50%;
+}
+
+.live-dot.connected span {
+  background: var(--accent);
+}
+
+.live-dot strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1;
+  text-overflow: ellipsis;
+}
+
+.live-dot small {
+  grid-column: 2;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 12px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.topbar-updated {
+  min-width: max-content;
+  padding-left: 18px;
+  border-left: 1px solid var(--border);
+}
+
+.topbar-updated small,
+.topbar-updated strong {
+  display: block;
+}
+
+.topbar-updated strong {
+  margin-top: 4px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.signal-bars {
+  display: inline-flex;
+  align-items: end;
+  gap: 3px;
+  height: 24px;
+  color: var(--accent);
+}
+
+.signal-bars span {
+  width: 4px;
+  background: currentColor;
+}
+
+.signal-bars span:nth-child(1) {
+  height: 7px;
+}
+
+.signal-bars span:nth-child(2) {
+  height: 14px;
+}
+
+.signal-bars span:nth-child(3) {
+  height: 22px;
+}
+
+.app-footer {
+  display: flex;
+  align-items: center;
+  min-height: var(--footer-height);
+  padding: 10px 20px;
+  color: var(--muted);
+  background: #020506;
+  border-top: 1px solid var(--border-strong);
+  font-size: 12px;
+  flex: 0 0 auto;
+}
+
+.app-footer a {
+  display: inline-flex;
+  align-items: center;
+  max-width: min(100%, 320px);
+}
+
+.app-footer img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 38px;
+  object-fit: contain;
+}
+
+@media (max-width: 1320px) {
+  .topbar {
+    grid-template-columns: minmax(132px, auto) minmax(0, 1fr) minmax(190px, auto);
+    gap: 14px;
+  }
+
+  .topbar-status {
+    grid-template-columns: minmax(0, 1fr) max-content;
+    gap: 12px;
+    justify-self: stretch;
+  }
+
+  .signal-bars {
+    display: none;
+  }
+
+  .topbar-updated {
+    padding-left: 12px;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    padding: 16px;
+  }
+
+  .topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .app-shell {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .topbar {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .topbar {
+    position: static;
+    display: grid;
+    overflow: visible;
+  }
+
+  .topbar-status {
+    grid-template-columns: minmax(0, 1fr);
+    justify-self: stretch;
+  }
+
+  .topbar-updated,
+  .signal-bars {
+    display: none;
+  }
+}

@@ -1,0 +1,1824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Incidents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:com="http://nationalrail.co.uk/xml/common" xsi:schemaLocation="http://internal.nationalrail.co.uk/xml/XsdSchemas/External/Version5.0/nre-incident-v5-0.xsd" xmlns="http://nationalrail.co.uk/xml/incident">
+  <PtIncident>
+    <CreationTime>2023-05-17T09:24:06.949Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-02-10T14:18:22.441Z</com:LastChangedDate>
+    </ChangeHistory>
+    <ParticipantRef>86AD43B5C2AF4DD6AE233EDB2CB53EDB</ParticipantRef>
+    <IncidentNumber>86AD43B5C2AF4DD6AE233EDB2CB53EDB</IncidentNumber>
+    <Version>20260210141822</Version>
+    <ValidityPeriod>
+      <com:StartTime>2022-12-21T00:00:00.000+00:00</com:StartTime>
+      <com:EndTime>2026-12-12T23:59:00.000+00:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amendments to some late night Southeastern trains]]></Summary>
+    <Description><![CDATA[<p><a href="http://www.networkrail.co.uk/running-the-railway/our-routes/kent/kent-and-south-east-london-railway-upgrade-plan/" title=""><strong>Engineering work</strong></a> is taking place at various locations on the Southeastern network, closing some lines overnight from Monday to Thursday. </p><p>These changes may be subject to further alterations on some days, such as starting earlier, or not taking place at all. Please check your journey using the Journey Planner, and also check other items on our engineering pages for the date of your journey.</p><p><strong></strong></p><p><strong>Mondays only:</strong></p><p>Every Monday night, Network Rail carry out essential maintenance on the lines between Ashford International and Ramsgate via Canterbury West.</p><p>From 23:50 until the end of service, buses replace trains between Ashford International and Canterbury West / Ramsgate. </p><p><strong></strong></p><p><strong>Mondays and Tuesdays:</strong></p><p>Every Monday and Tuesday night, Network Rail carry out essential maintenance on the lines to and from London Charing Cross.  </p><p>There will be no trains at London Charing Cross or London Waterloo East from approximately 23:30 until the end of service. </p><p>Trains will run from London Cannon Street instead, and you will need to travel to / from London Cannon Street / London Bridge. </p><p><strong></strong></p><p><strong>Tuesdays only:</strong></p><p>Every Tuesday night, Network Rail carry out essential maintenance on the lines between Faversham and Ramsgate via Margate.  </p><p>From 23:30 until the end of service, buses replace trains between Faversham and Margate / Ramsgate. </p><p><strong></strong></p><p><strong>Wednesdays and Thursdays:</strong></p><p>Every Wednesday and Thursday night, Network Rail carry out essential maintenance on the lines to / from London Cannon Street.</p><p>There will be no trains at London Cannon Street from approximately 23:35 until the end of service. </p><p>Trains will run to / from London Charing Cross instead, if you could please make your way to London Bridge for these trains. </p><p><strong></strong></p><p><strong>Ticket acceptance:</strong></p><p><strong><em>Monday to Thursday only:</em></strong></p><p>From 23:00 until the end of service, you can use London Underground between Charing Cross, Embankment, Cannon Street, London Bridge, Southwark and Waterloo at no extra cost. </p><p></p><h4><strong>Check before you travel:</strong></h4><p>You can plan your journey using the National Rail Enquiries <a href="http://ojp.nationalrail.co.uk/" title="">Journey Planner</a></p><p>You can plan your journey on London Underground by using the Transport for London <a href="https://tfl.gov.uk/plan-a-journey/" title="">Journey Planner</a></p><p></p><h4><strong>Replacement Bus Travel Advice:</strong></h4><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">this page</a>.</p><p>You can find the location of your bus replacement by checking station signs or by searching for your station on our station <a href="http://www.nationalrail.co.uk/stations_destinations/default.aspx" title="">information pages</a>.</p><p>Please be advised that, on occasion, replacement vehicles may be busier than usual, and you should allow extra time for your journey. </p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/se-various-southeastern-routes-20221221/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Various Southeastern routes</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2025-12-09T10:55:49.337Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-01T05:36:14.858Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>C9289151915F4695BE0B50DC85518B83</IncidentNumber>
+    <Version>20260501053614</Version>
+    <ValidityPeriod>
+      <com:StartTime>2025-12-09T00:00:00.000+00:00</com:StartTime>
+      <com:EndTime>2026-12-13T23:59:00.000+00:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between Corkickle and Whitehaven until further notice]]></Summary>
+    <Description><![CDATA[<p>During pre-planned <a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">engineering work</a> at Bransty Tunnel, between Corkickle and Whitehaven, inspections revealed unstable ground conditions which require urgent repair. As a result, the line through the tunnel is closed.
+</p><h4><strong>Customer advice:</strong></h4><p><strong>Service impact</strong></p><p>Train services are running between Lancaster / Barrow-in-Furness and Corkickle, and also between Whitehaven and Carlisle. </p><p>Buses will replace trains between Corkickle and Whitehaven.</p><p>Please speak to station staff, see online journey planners or consult customer information screens for departure times of these buses. Journey times may be extended by up to 60 minutes whilst travelling by road transport.</p><p><strong>Ticket acceptance</strong></p><p>If the train you have a ticket for is cancelled, you can travel on any Northern or TransPennine Express service within two hours before or after your cancelled service was due to depart. This is at no extra cost, and does not require you to amend your ticket.</p><h4><strong>Additional information:</strong></h4><p>At the end of July 2025, Network Rail carried out assessments and surveys inside Bransty Tunnel ahead of planned <a href="https://www.networkrail.co.uk/running-the-railway/our-routes/north-west/bransty-tunnel-track-renewal/" title="">full track and drainage renewal that was scheduled to take place during August and September</a>. 
+
+This involved doing surveys to assess any weight limits for the heavy machinery needed for the planned renewals. These surveys uncovered some areas under the railway which need strengthening before any work can progress.
+
+After assessing the initial survey data by specialist expert engineers, Network Rail has closed Bransty Tunnel to all trains until further notice.
+
+The exact time frame for how long these repairs and subsequent track improvements will take is still being worked on.</p><h4><strong>Check before you travel: </strong></h4><p>You can check your journey using the National Rail Enquiries real-time <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/corkickle-9-dec-20251209/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Lancaster / Barrow-in-Furness and Carlisle </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-01-15T08:00:25.445Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-02T10:45:40.477Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>106F94D6CAE24A54A71B71E7B89C7E5D</IncidentNumber>
+    <Version>20260602104540</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-02-09T00:00:00.000+00:00</com:StartTime>
+      <com:EndTime>2026-06-13T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[The 05:21 Nottingham to Liverpool Lime Street service will not call at Bamford from Monday 9 February to Saturday 13 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place at Bamford station, closing some lines.</p><p><strong>Monday 9 February to Saturday 13 June:</strong></p><p>Due to works being carried out at Bamford station, the 05:21 Nottingham to Liverpool Lime Street service will <strong>not </strong>call at Bamford station. </p><p>If you are wishing to travel from Bamford station on the 06:41 Bamford to Liverpool Lime Street service, earlier road transport will be provided (by Northern) to connect with the 06:38 departure from Hathersage. Customers can also travel to Hope (Derbyshire) to connect with the 06:46 departure.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a> </p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p><p></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/bamford-9-feb-20260209/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>EM</OperatorRef>
+          <OperatorName>East Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Nottingham and Liverpool Lime Street</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-10T07:57:11.210Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-07T12:59:48.239Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>C26F3FE0B7B34E88AA6DE16502C81733</IncidentNumber>
+    <Version>20260507125948</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-05-30T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-26T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Transpennine Route Upgrade: Buses replace trains between Huddersfield / Halifax and Leeds via Dewsbury from Saturday 30 May to Friday 26 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Huddersfield / Halifax and Leeds, closing all lines via Dewsbury / Brighouse. Background information on this work can be found below.</p><h3><strong>Northern: </strong></h3><h4><strong>Saturday and Sunday:</strong></h4><p>Buses will replace trains between:</p><ul><li>Halifax and Leeds via Brighouse / Dewsbury </li><li>Huddersfield and Leeds via Dewsbury</li></ul><p></p><p>An amended train service will run between Manchester Victoria and Leeds, running via Bradford Interchange. This service will<strong> not</strong> call at stations via Dewsbury / Brighouse.</p><h4>Monday to Friday:</h4><p>Buses will replace trains between:</p><ul><li>Huddersfield and Leeds</li><li>Huddersfield and Brighouse</li></ul><p></p><h3><strong>TransPennine Express:</strong></h3><h4>Saturday and Sunday:</h4><p>The following train plan will operate between:</p><ul><li>Leeds and Newcastle</li><li>Leeds and Redcar Central</li><li>Wakefield Kirkgate and York </li><li>Leeds and Hull</li><li>York and Scarborough</li><li>Manchester Airport and Huddersfield</li><li>Liverpool Lime Street and Huddersfield</li><li>Manchester Victoria and Huddersfield (calling at Todmorden, Hebden Bridge, Mytholmroyd, Sowerby Bridge)</li><li>Leeds and York (calling at Cross Gates, Garforth, East Garforth and Micklefield)</li></ul><p></p><p><strong>Replacement buses will run between:</strong></p><ul><li>Huddersfield and Wakefield Kirkgate</li><li>Huddersfield and Leeds via Dewsbury</li></ul><p></p><h4>Monday to Friday:</h4><p>The following train plan will operate between:</p><ul><li>Liverpool Lime Street and Newcastle (does not stop at Newton-le-Willows, but will additionally call at Lea Green)</li><li>Liverpool Lime Street and Manchester Victoria (calling at Newton-le-Willows)</li><li>Manchester Airport and Scarborough</li><li>Leeds and Hull</li><li>Manchester Piccadilly and York</li><li>Manchester Piccadilly and Huddersfield</li><li>York and Redcar Central</li></ul><p></p><p><strong>Replacement buses will run between:</strong></p><ul><li>Huddersfield and Leeds via Dewsbury</li></ul><p></p><p><strong>Background information:</strong></p><p>Transpennine Route Upgrade work is taking place between Bradley Junction (which is near Deighton and Mirfield) and Leeds, where teams are carrying out track and drainage renewals to improve reliability. Overhead line equipment works are also ongoing to support future electrification.</p><p>At Batley station, teams are extending platforms to 150 metres, alongside resurfacing and coping stone realignment. Work is also progressing on the subway infill and lift installation to improve accessibility.</p><p>At Dewsbury station, platform extensions to 200 metres are underway, along with resurfacing and coping stone realignment. Canopy extensions, subway strengthening and footbridge improvements are also progressing.</p><p>Elsewhere, reconstruction of the Jack Lane railway bridge in Batley is ongoing as part of the wider upgrade works.</p><p>More information on this project is available from the <a href="https://thetrupgrade.co.uk/yourstation/upcomingclosures/" title="">Transpennine Route Upgrade website.</a></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/leeds-and-halifax-huddersfield-via-dewsbury-20260530/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>TP</OperatorRef>
+          <OperatorName>TransPennine Express</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Northern between Wigan Wallgate / Wigan North Western / Huddersfield / Bradford Interchange / Halifax / Brighouse and Leeds</p><p>All TransPennine Express services to / from / via Huddersfield</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-12T08:14:54.857Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-12T08:15:55.799Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>66D2D6A6FDC0405DA3CC773A5051C917</IncidentNumber>
+    <Version>20260312081555</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Reduced off-Peak service via Maidstone East from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Maidstone East and Ashford International, closing some lines.</p><p>To allow maintenance and inspection work to take place in daylight between Maidstone East and Ashford International, off-peak trains between London Victoria and Ashford International will run hourly from 08:20 until approximately 12:00.</p><p>The following trains will <strong>not</strong> run:</p><p></p><ul><li>08:25, 09:25 and 10:23 London Victoria to Ashford International</li><li>09:28 and 10:27 Ashford International to London Victoria</li></ul><p><strong></strong></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/maidstone-east-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Victoria and Ashford International</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-12T08:39:13.114Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-29T13:10:00.988Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>132E75E62C1648E492E1D8C1E7F17DA1</IncidentNumber>
+    <Version>20260529131000</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning Southeastern services between Monday 8 and Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight at various locations on the Southeastern network, closing some lines.</p><p><strong>Monday, Wednesday and Thursday:</strong></p><p>The 23:40 London Cannon Street to Dover Priory (<strong>Monday</strong>) / 23:34 London Charing Cross to Canterbury West / Dover Priory (<strong>Wednesday / Thursday</strong>) will be diverted between London Bridge and Ashford International, and will run non-stop between London Bridge and Ashford International.</p><p><strong>Accessible replacement buses will run between:</strong></p><ul><li>Tonbridge and Headcorn (calling at all stations)</li><li>Headcorn and Dover Priory calling at Pluckley, Folkestone West and Folkestone Central</li><li>Ashford International and Canterbury West calling at all stations (will connect with the bus from Headcorn at Ashford International)</li></ul><p></p><p>If you are travelling to Sevenoaks, Tonbridge, or connecting to the replacement bus at Tonbridge, please use alternative trains between London, Sevenoaks and Tonbridge.</p><p><strong>Monday to Thursday:</strong></p><p>From approximately 23:20, some trains will arrive / depart London Victoria later than usual, by up to 8 minutes with longer journeys on some trains to Ashford International, Dartford and Orpington.</p><p>From 23:30 until the end of service, accessible buses will replace trains between Bromley South / Swanley and Rochester. </p><p>The 23:40 London Victoria to Ramsgate train will run non stop between London Victoria and Rochester. An additional train will run from London Victoria to Bromley South (departing at 23:43) to connect with replacement buses between Bromley South and Meopham.</p><p>The 00:10 and 00:40 London Victoria to Gillingham (Kent) trains will run non-stop between London Victoria and Rochester. If you are travelling from either Bromley South, Swanley, Longfield and Meopham to stations beyond Gillingham (Kent), you will need to travel earlier than usual.</p><p>An additional train will run between London Victoria and Swanley, leaving at 00:40 to connect with the replacement bus services between Swanley, Meopham and Gillingham.</p><p><strong>Accessible buses will run between:</strong></p><ul><li>Swanley and Meopham, calling at all stations</li><li>Meopham and Gillingham (Kent), calling at Rochester and Chatham</li><li>Meopham and Sole Street*</li></ul><p></p><p>*If you are travelling to or from Sole Street and have additional assistance requirements we recommend you contact the <a href="https://www.southeasternrailway.co.uk/help/support/accessible-travel" title="">Southeastern accessible travel team</a>, send #Assist to 07866 002960 on WhatsApp or use the help point at the station so Southeastern can ensure appropriate transport is available for you.</p><p><strong>Tuesday and Wednesday:</strong></p><p>The 00:26 London Cannon Street to Dartford via Greenwich will be diverted to run via Bexleyheath. An accessible bus will run between London Bridge and Dartford via Greenwich You will need to use an alternative train from London Cannon Street to London Bridge to connect with the bus.</p><p><strong>Wednesday and Thursday:</strong></p><p>The 22:34 London Charing Cross to Ramsgate via Canterbury West train will be replaced by an accessible bus between Minster and Ramsgate calling at Thanet Parkway.</p><p>The 23:07 London St Pancras International to Ramsgate via Dover Priory service will be replaced by an accessible bus between Dover Priory and Ramsgate calling at all stations.</p><p>The 23:40 London St Pancras International to Margate via Canterbury West service will be replaced by an accessible bus between Canterbury West and Margate calling at all stations except Dumpton Park.</p><p><strong>Thursday and Friday:</strong></p><p>The 00:22 London Charing Cross to Dartford via Woolwich Arsenal will be diverted to run via Bexleyheath. An accessible bus will run between Lewisham and Dartford via Woolwich Arsenal. You will need to use an alternative train from London Charing Cross, Waterloo East or London Bridge to Lewisham to connect with the bus.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/midweek-se-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Various Southeastern routes</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T09:35:43.527Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-16T09:35:43.527Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>7B7F2F78A8F24F889BF95EF0C62D3185</IncidentNumber>
+    <Version>20260316093543</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-12T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 21:45 Penzance to London Paddington "Night Riviera" Sleeper service on Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place in the Taunton area, closing some lines.</p><p>As a result, the 21:45 Penzance to London Paddington "Night Riviera" Sleeper service will depart Exeter St Davids approximately 15 minutes later than usual, and will not call at Taunton. </p><p>For Taunton, you should use <strong>earlier</strong> train services instead.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/21-45-penzance-to-london-paddington-night-riviera-sleeper-service-20260612/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>GW</OperatorRef>
+          <OperatorName>Great Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Great Western Railway between Penzance and London Paddington</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T09:39:21.905Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-16T09:39:21.905Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>42780F505C2B42E698C64DE0D05369C3</IncidentNumber>
+    <Version>20260316093921</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-09T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 06:12 Frome to London Paddington service from Tuesday 9 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Frome and Westbury, closing some lines.</p><p>As a result, the 06:12 Frome to London Paddington service will be amended to start from Westbury at 06:22. You can use the <strong>earlier</strong> 06:07 Frome to Westbury train service at no extra cost to connect with the amended train service.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/06-12-frome-to-london-paddington-service-20260609/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>GW</OperatorRef>
+          <OperatorName>Great Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Great Western Railway between Frome and London Paddington</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T09:48:39.272Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-16T09:48:39.272Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>1562D09A58CC432BA1790866BFA1979F</IncidentNumber>
+    <Version>20260316094839</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-09T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 05:31 Bedwyn to London Paddington service from Tuesday 9 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place in the Reading area, closing some lines.</p><p>As a result, the 05:31 Bedwyn to London Paddington service will terminate at Reading. You can use other Great Western Railway services between Reading and London Paddington at no extra cost.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/05-31-bedwyn-to-london-paddington-service-20260609/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>GW</OperatorRef>
+          <OperatorName>Great Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Great Western Railway between Bedwyn and London Paddington</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T12:03:44.246Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-12T08:25:39.129Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>611485DAF3B140D0843B01ABD25F93BF</IncidentNumber>
+    <Version>20260430132309</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[No late night / early morning services via Seven Sisters from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Hackney Downs and Cheshunt, closing all lines via Seven Sisters overnight from Monday evening until Friday morning.</p><h4>Greater Anglia / Stansted Express: </h4><p>Between 23:35 and 05:15 each night, trains which usually run via Seven Sisters will be diverted to run via Tottenham Hale instead.</p><p>Stations on the Tottenham Hale line are only a short distance from those on the Seven Sisters line. You can view maps that show routes between these stations on the <a href="https://www.greateranglia.co.uk/sites/default/files/alterations/lea_valley_alternative_station_walking_routes_1.pdf" title="">Greater Anglia website</a>. </p><h4>London Overground:</h4><p>After 23:35 until the end of service on Monday to Thursday evenings, no trains will run between London Liverpool Street and Enfield Town / Cheshunt.</p><p>The last trains to run will be:</p><ul><li>22:43 London Liverpool Street to Cheshunt service <strong>(Monday, Tuesday and Thursday)</strong></li><li>22:13 London Liverpool Street to Cheshunt service <strong>(Wednesday)</strong></li><li>22:50 Enfield Town to London Liverpool Street</li><li>22:58 London Liverpool Street to Enfield Town</li><li>22:59 Cheshunt to London Liverpool Street</li></ul><p></p><p>If you have a National Rail paper ticket or e-ticket, you can use your ticket at no extra cost on the following operators’ services:</p><ul><li>Central line for Bethnal Green</li><li>Local bus 254 between Bethnal Green Central Line station and Cambridge Heath, London Fields and Hackney Downs</li><li>Mildmay line for Hackney Downs (Hackney Central)</li><li>Local bus 276 for journeys between Hackney Downs and Rectory Road</li><li>Local buses 106 or 393 for journeys between Clapton and Stoke Newington</li><li>Local buses 243 and 254 for journeys between Seven Sisters and Stamford Hill</li><li>Victoria line to / from Seven Sisters</li><li>Local buses 149, 249, 279 and 349 for journeys between Seven Sisters, Bruce Grove, White Hart Lane, Silver Street and Edmonton Green</li><li>Local bus 192 for journeys between Edmonton Green, Bush Hill Park and Enfield Town</li><li>Local bus 349 for journeys between Edmonton Green and Southbury</li><li>Local bus 279 for journeys between Edmonton Green and Turkey Street</li><li>Local buses 279 and 251 for journeys between Turkey Street and Theobalds Grove</li><li>Local buses 251 / 310 for journeys between Theobalds Grove and Cheshunt</li><li>Mildmay line to Hackney Central and local bus 253 for Clapton</li><li>Victoria line to Walthamstow Central and local buses:<ul><li>W11 / 275 for St James Street</li><li>230 or W15 and W16 to Wood Street</li><li>Local bus 212 between Chingford and Highams Park</li><li>Local buses 97 / 212 between Chingford and Walthamstow Central
+</li></ul></li></ul><p>If you are using contactless payment / Oyster card, you can also use the above alternative travel options but you will be required to pay the normal tap in / tap out fares for your journey. </p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p>You can plan your journey on London Buses / London Underground by using the Transport for London <a href="https://tfl.gov.uk/plan-a-journey/" title="">Journey Planner</a> </p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/seven-sisters-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>LE</OperatorRef>
+          <OperatorName>Greater Anglia</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>LO</OperatorRef>
+          <OperatorName>London Overground</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>SX</OperatorRef>
+          <OperatorName>Stansted Express</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Greater Anglia between London Liverpool Street and Cheshunt / Enfield Town</p><p>London Overground between London Liverpool Street and Enfield Town / Cheshunt</p><p>Stansted Express between London Liverpool Street and Stansted Express</p><p></p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T12:31:10.140Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-04-30T09:55:00.021Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>1A6A46262AF148068F5294F8F54A63AC</IncidentNumber>
+    <Version>20260430095500</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 05:29 Blackpool South to Preston service from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Blackpool North and Preston, closing some lines.</p><p>The 05:29 Blackpool South to Preston service will <strong>start</strong> from Blackpool North. A bus will be provided from Blackpool South to Kirkham & Wesham, departing Blackpool South <strong>earlier</strong> at 04:55 and connecting with the amended train at Kirkham & Wesham.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/bps-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Blackpool South and Preston </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T13:10:56.388Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-30T10:49:58.666Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>F9609C5CE68E4A0EB9BCF72617415139</IncidentNumber>
+    <Version>20260327084835</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning Northern service to / from Manchester Piccadilly from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight in the Manchester Piccadilly area, closing some lines.</p><p><strong>Monday to Thursday:</strong></p><p>The 22:06 Manchester Piccadilly to Crewe service will<strong> terminate</strong> at Alderley Edge.  A bus will be provided from Alderley Edge to Crewe.</p><p>The 22:36 Manchester Piccadilly to Wilmslow service will<strong> terminate</strong> at Manchester Airport.  A bus will be provided from Manchester Airport to Wilmslow.</p><p>The 22:59 Buxton to Manchester Piccadilly train service will <strong>not</strong> run and will be replaced by a bus.</p><p>The 23:01 Manchester Piccadilly to Alderley Edge service will <strong>terminate</strong> at Stockport.  A bus will be provided from Stockport to Alderley Edge.</p><p>The 23:10 Manchester Piccadilly to Buxton service will <strong>not</strong> run.  A bus will be provided from Stockport to Buxton.  Train services are available from Manchester Piccadilly to Stockport.</p><p>The 23:12 Crewe to Manchester Piccadilly service will <strong>start</strong> from Stockport.  A bus will be provided from Crewe to Manchester Piccadilly.</p><p>The 23:23 Manchester Piccadilly to Hazel Grove service will <strong>terminate</strong> at Stockport.  A bus will be provided from Stockport to Hazel Grove.</p><p>The 23:36 Manchester Piccadilly to Crewe service will <strong>terminate </strong>at Stockport.  A bus will be provided from Stockport to Crewe.</p><p><strong>Tuesday to Friday:</strong></p><p>The 00:44 Crewe to Manchester Piccadilly service will <strong>start</strong> from Manchester Airport. A bus will be provided from Crewe to Manchester Piccadilly.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/man-picc-nt-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Various Northern routes to / from / via Manchester Piccadilly</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T13:28:35.061Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-16T13:28:35.061Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>3E2A54DF80434FF1B1B5FB69B037DD4F</IncidentNumber>
+    <Version>20260316132835</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-09T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 06:01 Carmarthen to Manchester Piccadilly service from Tuesday 9 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Llanelli and Port Talbot Parkway, closing some lines early on Tuesday to Friday mornings.</p><p>As a result, the 06:01 Carmarthen to Manchester Piccadilly service will depart Llanelli slightly <strong>earlier</strong> than usual, and will be diverted, additionally calling at Neath. It will run normally to Port Talbot Parkway and beyond.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/06-01-carmarthen-to-manchester-piccadilly-20260609/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>AW</OperatorRef>
+          <OperatorName>Transport for Wales</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Transport for Wales between Carmarthen and Manchester Piccadilly</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-16T13:34:46.334Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-16T13:34:46.334Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>F46B7E43E41F4EE59332B35A94677DE7</IncidentNumber>
+    <Version>20260316133446</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning trains at Cardiff Central from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place at Cardiff Central, closing some platforms at the station overnight from Monday evening until Friday morning.</p><p>Between 21:50 and 05:50, some trains at Cardiff Central will be amended to call at different platforms to usual.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/cardiff-central-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>AW</OperatorRef>
+          <OperatorName>Transport for Wales</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Transport for Wales services to / from / via Cardiff Central</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-17T09:05:53.487Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-17T09:05:53.487Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>E7007457F5834F4BB5B3F113B1E64B9E</IncidentNumber>
+    <Version>20260317090553</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-09T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning services to / from Bushey from Tuesday 9 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between London Euston and Watford Junction, closing some lines.</p><p>The following services will not call at Bushey:</p><p><strong>Tuesday to Friday:</strong></p><ul><li>23:42 London Euston to Northampton</li></ul><p></p><p><strong>Wednesday to Friday:</strong></p><ul><li>00:09 London Euston to Northampton</li><li>00:39 London Euston to Northampton</li></ul><p></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/midweek-bushey-9-june-20260609/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>LN</OperatorRef>
+          <OperatorName>London Northwestern Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Euston and Northampton</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-19T06:21:57.113Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-19T06:24:09.127Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>3F07159265E34392B79344CB1773BB91</IncidentNumber>
+    <Version>20260319062409</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-10T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 05:21 Nottingham to Liverpool Lime Street service from Wednesday 10 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Nottingham and Chesterfield, closing some lines.</p><p>The 05:21 Nottingham to Liverpool Lime Street train will depart Nottingham <strong>earlier </strong>than scheduled at 05:04, it will then return to its scheduled departure time from Chesterfield.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/05-21-not-liv-10-june-20260610/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>EM</OperatorRef>
+          <OperatorName>East Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Nottingham and Liverpool Lime Street </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-19T07:26:27.907Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-27T10:44:06.558Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>FC7707450979425397F5CD6A8E3E04D1</IncidentNumber>
+    <Version>20260527104406</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended East Midlands Railway service to / from London St Pancras International from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Bedford and Luton and between Leicester and East Midlands Parkway, closing some lines.</p><p><strong>Monday to Friday:</strong></p><p>The 22:47 London St Pancras International to Corby train will depart Bedford <strong>later</strong> than scheduled at 23:47, it will continue to run up to 12 minutes later through to Corby.</p><p><strong>Monday to Thursday:</strong></p><p>The 21:35 London St Pancras International to Nottingham train will depart East Midlands Parkway <strong>later </strong>than scheduled at 23:06, it will continue to run up to 14 minutes<strong> later</strong> through to Nottingham.</p><p>The 22:32 London St Pancras International to Sheffield train will depart Loughborough <strong>later</strong> than scheduled at 23:57, it will continue to run up to 13 minutes<strong> later</strong> through to Sheffield.</p><p>The 23:04 London St Pancras International to Derby train will depart Leicester<strong> earlier</strong> than scheduled at 01:33, it will then depart Loughborough <strong>later </strong>than scheduled at 01:53. It will continue to run up to 12 minutes <strong>later </strong>through to Derby. </p><p>The 23:35 London St Pancras International to Nottingham train will depart Kettering<strong> later</strong> than scheduled at 01:04, it will continue to run up to 21 minutes <strong>later</strong> through to Nottingham.</p><p><strong>Tuesday to Friday:</strong></p><p>The 04:14 Derby to London St Pancras International train will depart <strong>earlier</strong> from Derby at 04:00, it will continue to run up to 14 minutes <strong>earlier</strong> through to Luton Airport Parkway.</p><p><strong>Friday:</strong></p><p>The 21:00 Sheffield to London St Pancras International train will arrive at London St Pancras International <strong>earlier </strong>than scheduled at 23:08.</p><p>The 23:35 London St Pancras International to Nottingham train will depart Kettering <strong>earlier</strong> than scheduled at 00:55, it will then depart Leicester <strong>later</strong> then scheduled at 01:52, it will continue to run up to 24 minutes<strong> later</strong> through to Nottingham. It will not call at Market Harborough. Rail replacement buses will run between Kettering and Market Harborough and Market Harborough and Leicester for connections. <strong><em>
+</em></strong></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p><p>
+</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/em-midweek-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>EM</OperatorRef>
+          <OperatorName>East Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All routes to / from London St Pancras International</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T16:15:00.774Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-01T15:41:50.279Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>6209C11060FA440D922E3348986B116E</IncidentNumber>
+    <Version>20260320162216</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-07T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace late night / early morning trains to / from Arlesey from Sunday 7 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place at Arlesey, closing some lines overnight from Sunday evening until Friday morning.</p><h4><strong>Sunday night / Monday morning:</strong></h4><p><strong>Southbound trains (towards London) </strong>will be unable to call at Arlesey between approximately 23:30 and 04:50.</p><p><strong>Northbound trains (from London)</strong> will be unable to call at Arlesey between approximately 01:45 and 06:20. </p><p>Rail replacement buses will run between Biggleswade and Hitchin, calling at Arlesey.</p><h4><strong>Monday evening until Friday morning:</strong></h4><p><strong>Southbound trains (towards London) </strong>will be unable to call at Arlesey between approximately 23:30 and 04:50.</p><p><strong>Northbound trains (from London)</strong> will be unable to call at Arlesey between approximately 00:40 and 06:20. </p><p>Rail replacement buses will run between Biggleswade and Hitchin, calling at Arlesey.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/arlesey-20260607/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>GN</OperatorRef>
+          <OperatorName>Great Northern</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>TL</OperatorRef>
+          <OperatorName>Thameslink</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Great Northern / Thameslink services between London Kings Cross and Peterborough</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T16:15:58.019Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-09T08:22:27.865Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>7DA100C2ADB4438881303BE28341360F</IncidentNumber>
+    <Version>20260609082227</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace late night / early morning trains in the Redhill area from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight in the Coulsdon South area, closing some lines.</p><h4>Southern:</h4><p>The 23:35 <strong>(Monday to Thursday) </strong>London Victoria to Horsham and the 00:08 <strong>(Tuesday to Friday)</strong> London Victoria to Gatwick Airport services will not call at Coulsdon South, Merstham or Redhill.</p><p>Replacement buses will run between Purley and Gatwick Airport / Horsham, calling at stations via Redhill.</p><h4>Thameslink:</h4><p>From approximately 23:59 on Monday to Thursday evenings until approximately 05:00 on Tuesday to Friday mornings, trains will be diverted and will <strong>not </strong>call at Coulsdon South, Merstham or Redhill.</p><p>Replacement buses will run between East Croydon and Gatwick Airport and between Purley and Horley to provide connections.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/coulsdon-south-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SN</OperatorRef>
+          <OperatorName>Southern</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>TL</OperatorRef>
+          <OperatorName>Thameslink</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Southern between London Victoria and Horsham / Three Bridges</p><p>Thameslink between Bedford and Brighton and between Peterborough and Horsham</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T16:24:07.353Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-01T15:41:23.599Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>306E9AFAB225491BB3FB858BEB94950D</IncidentNumber>
+    <Version>20260322105814</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace late night / early morning trains to / from Welham Green / Hatfield from Monday 8 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight in the Welham Green area, closing some lines.</p><p>Between approximately 23:10 on Monday to Thursday evenings, until 05:10 Tuesday to Friday mornings, trains <strong>towards London</strong> will be unable to call at Welham Green and Hatfield, and trains <strong>from London</strong> will be unable to call at Welham Green. </p><p>Rail replacement buses will run between Welwyn Garden City and Potters Bar, calling at Welham Green and Hatfield.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/welham-green-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>GN</OperatorRef>
+          <OperatorName>Great Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Great Northern between Moorgate / London Kings Cross and Welwyn Garden City</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T14:44:02.320Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-01T15:42:14.291Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>084E88869D2E4D31B77D24B938C6E8AB</IncidentNumber>
+    <Version>20260430133436</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-08T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-12T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended very early morning services to / from London Bridge from Tuesday 9 to Friday 12 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between London Bridge and East Croydon, closing some lines.</p><p>The following services will be amended:</p><ul><li>The 00:17 London Bridge to Caterham train will be diverted between London Bridge and East Croydon, running non-stop between London Bridge and Selhurst, <strong>no longer</strong> <strong>calling </strong>at Norwood Junction and will run later than usual throughout</li><li>The 00:35 London Bridge to East Croydon will <strong>not </strong>run. A replacement bus will run from London Bridge to East Croydon, calling at stations via Sydenham</li></ul><p></p><p>Journeys times will be increased when using replacement buses.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/london-bridge-8-june-20260608/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SN</OperatorRef>
+          <OperatorName>Southern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Bridge and East Croydon / Caterham</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-30T12:05:19.686Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-11T13:46:49.386Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>2F7C5A97EEC844A886D192D3C9A5758C</IncidentNumber>
+    <Version>20260511134649</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-05-11T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-09-30T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Berrylands Station Upgrade: Buses replace trains to / from Berrylands from Monday 11 May to the end of September]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place at Berrylands station, closing the station from Monday 11 May to the end of September. Background information on the work can be found below.</p><p>As a result, no trains will call at Berrylands station. Trains will still be able to run through the station without stopping.</p><p>Replacement buses will run between:</p><ul><li>New Malden and Berrylands</li><li>Berrylands and Surbiton</li></ul><p></p><p><strong>Please be aware </strong>that on some weekends, engineering work will close all lines through Berrylands. You can check for engineering items via the <a href="https://www.nationalrail.co.uk/status-and-disruptions/?operatorCode=SW" title="">Status and Disruptions page</a>.</p><p><strong>Background information:</strong></p><p>Network Rail are carrying out essential upgrades at Berrylands station, to extend the life of the station and improve the experience for passengers travelling via this important suburban hub. To allow completion of the work, Berrylands station will be closed for over 4 months and trains will run through without stopping. </p><p>Berrylands station sits on a five-metre-high embankment with timber platforms that are no longer fit for purpose. This project will see the full replacement of Berrylands’ two timber platforms and supporting structures, which date back to the 1930s. Also, narrow sections of the platform will be widened to improve safety and accessibility. New platform lighting, CCTV, information screens and help points will be installed. This project will ensure Berrylands continues to serve the local community reliably and safely for years to come. More details on the work taking place are available on the <a href="https://www.networkrail.co.uk/our-work/our-routes/wessex/berrylands-station-upgrade/" title="">Network Rail website</a>. </p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/berrylands-station-closure-20260511/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SW</OperatorRef>
+          <OperatorName>South Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All South Western Railway services to / from / via Berrylands</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-30T12:42:56.185Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-04-09T09:07:55.820Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>E86E1A966B84413B8238B6B102A3D445</IncidentNumber>
+    <Version>20260409090755</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-05-11T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-10-11T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended services to / from Wandsworth Town from Monday 11 May to Sunday 11 October]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place at Wandsworth Town, closing some platforms at the station.</p><h4><strong>Monday 11 May to Sunday 26 July:</strong></h4><p>Platform 2 at Wandsworth Town is closed. Trains will call at platform 1 during this period. </p><p><strong>Monday – Thursday between 11:00 – 14:00:</strong> </p><p>No trains travelling <strong>from London Waterloo </strong>will call at Wandsworth Town. Passengers for Wandsworth Town should circulate via Putney.</p><h4><strong>Monday 27 July to Sunday 11 October:</strong></h4><p>Platform 3 at Wandsworth Town is closed. Trains will call at platform 4 during this period. </p><p><strong>Monday – Thursday between 11:00 – 14:00:</strong></p><p>No trains travelling <strong>towards London Waterloo </strong>will call at Wandsworth Town. Passengers for Wandsworth Town should circulate via Clapham Junction.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/wandsworth-town-20260511/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SW</OperatorRef>
+          <OperatorName>South Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All South Western Railway services to / from Wandsworth Town</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-04-10T08:26:53.649Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-28T09:07:07.890Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>094B4CECAD4749AB938D696B87DD25E7</IncidentNumber>
+    <Version>20260528090707</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-07T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-29T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Far North Line upgrades: buses will replace trains between Dingwall and Wick from late on Sunday 7 to early on Monday 29 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Dingwall and Wick, closing all lines. Background information on the work can be found below.</p><p><strong>Monday 8 to Sunday 28 June</strong></p><p><strong>Inverness – Wick / Thurso:</strong></p><p>Full size coaches will operate between Inverness and Wick.</p><p>Minibuses connect with coaches at Tain, Golspie and Helmsdale.</p><p>A limited amount of train services will operate from Inverness to Dingwall only, calling at intermediate stations.</p><p>You can also view a <a href="https://assets.nationalrail.co.uk/e8xgegruud3g/7yH1NHDu6Bf1nK1ovLzAgX/1a3020e666a13cc5c7847e5ebd3e89f0/SR-KF260522_Inverness_-_Tain_and_Wick_-_Mon_8_-_Sun_28_June_2026_V4.pdf" title="">map of this work</a> via the link.</p><p><strong>Inverness – Kyle of Lochalsh:</strong></p><p>Trains will operate as normal.</p><p><strong>Please note:</strong> the following trains on <strong>Sunday 7 and Monday 29 June</strong> are also cancelled:</p><p><strong>Sunday 7 June:</strong></p><ul><li>17:54 Inverness to Wick</li></ul><p></p><p><strong>Monday 29 June</strong></p><ul><li>06:18 Wick to Inverness</li><li>08:02 Wick to Inverness</li></ul><p><strong></strong></p><p><strong>Background information:</strong></p><p>Network Rail is set to carry out major engineering work worth £6m on the Far North Line, to help improve journeys on one of the Highlands’ most important transport routes. Upgrades will take place at several locations including between Evanton (near Alness), Tain, and Lairg, and on sections north of Tain towards Wick and Thurso.</p><p>Engineers will be renewing more than 4 km of track, carrying out repairs to a railway bridge, improving drainage, and maintaining the level crossing at Rogart.</p><p>In order for the work to be completed safely and efficiently, no trains will run between Dingwall and Wick from late on Sunday, 7 June, until early on Monday, 29 June. During this time, ScotRail will operate a rail replacement plan. More information on the work can be found on the <a href="https://www.networkrailmediacentre.co.uk/news/gbp-6m-upgrades-on-the-far-north-line-over-three-weeks-in-june" title="">Network Rail website</a>.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>. </p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/dingwall-and-wick-20260607/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SR</OperatorRef>
+          <OperatorName>ScotRail</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All trains to / from Wick / Thurso</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-05-06T07:58:20.744Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-03T10:53:55.600Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>CB0F1452600342E3B3D99D8730006CFC</IncidentNumber>
+    <Version>20260603105355</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-12T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2027-04-30T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Building new footbridge with lifts: Amended services to / from Tackley from Friday 12 June 2026 until Friday 30 April 2027]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place on the footbridge at Tackley, closing platform 2.</p><p>From Friday 12 June 2026 through until Friday 30 April 2027, trains in the Oxford direction (southbound) will not stop at Tackley station. This is so that a permanent footbridge with lifts can be installed at the station for passengers to cross between the platforms (see background information below). </p><p>Trains running towards Banbury (northbound) will continue to call at Tackley as normal. </p><h4><strong>If you are travelling from Tackley towards Oxford, your travel options are as follows:</strong></h4><ul><li>Travel from Heyford station instead (3.5 miles away by road)</li><li>Catch a train northbound and change at Heyford station. You should cross to the opposite platform upon arrival at Heyford station, and catch a southbound train towards Oxford</li><li>Catch the <a href="https://www.stagecoachbus.com/" title="">Stagecoach</a> S4 bus service from Tackley village which stops at Oxford Parkway station for onward train connections before continuing to Oxford city centre</li></ul><p></p><h4><strong>If you are travelling to Tackley from the Banbury direction, your travel options are as follows:</strong></h4><ul><li>Travel from Heyford station instead (3.5 miles away by road)</li><li>Catch the <a href="https://www.stagecoachbus.com/" title="">Stagecoach</a> S4 bus service from Banbury bus station (approximately 6 minute distance from Banbury station) to Tackley village</li><li>Catch a train to Heyford station then travel a short distance to Heyford Bridge bus stop and catch the <a href="https://www.stagecoachbus.com/" title="">Stagecoach</a> S4 bus service to Tackley village from there</li></ul><p></p><p>Please note, if you choose to travel using the Stagecoach bus route mentioned above, this will be at your own cost.</p><p>Great Western Railway has implemented a discounted £2.10 ticket from Oxford to Tackley to ensure customers do not pay anymore during the platform closure. This will ensure that if a customer used the S4 bus to get into Oxford (£3) and the train to get home (£2.10) they would only pay £5.10, the current price of an off-peak return rail ticket. </p><p><strong>Please note: You will need to claim the discount at the ticket office at Oxford station.</strong></p><p>If you are a disabled passenger or a passenger with reduced mobility or additional needs and you are wishing to travel to or from Tackley, please call Great Western Railway's passenger assistance team on 0800 197 1329.</p><h4>Background information:</h4><p>In June 2026, work will begin to build a new footbridge with two lifts at Tackley station. The bridge will be built on the site of the current, temporary, scaffold bridge. Network Rail aim to open the new bridge in spring 2027, with the lifts to follow later in the year. </p><p>To allow the new bridge to be built the southbound platform, for trains towards Oxford, will be closed. No trains will call at this platform until the new bridge opens. More information on the work taking place, and how it affects Tackley village, can be found on the <a href="https://www.networkrail.co.uk/our-work/our-routes/western/tackley-station/" title="">Network Rail website.</a> </p><h4><strong>Check before you travel:</strong></h4><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p>You can plan your journey on buses by using the Traveline <a href="http://www.traveline.info/" title="">website</a>. </p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/tackley-footbridge-closure-20260612/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>GW</OperatorRef>
+          <OperatorName>Great Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All Great Western Railway services to / from Tackley</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-12T09:45:16.902Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-03T11:03:44.021Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>86F6B33FABDA4596A17B57B6520D8523</IncidentNumber>
+    <Version>20260603110344</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace Southeastern trains between Lewisham and Dartford via Greenwich and Woolwich Arsenal on Saturday 13 and Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Deptford and Slade Green, closing the Woolwich Line.</p><p><strong>On Sunday, the work will be extended and London Cannon Street will be closed.</strong></p><p><strong>Saturday:</strong></p><p><strong>Woolwich Line:</strong> Trains between London Cannon Street and Slade Green via Greenwich, and between London Cannon Street and Dartford via Lewisham and Woolwich Arsenal will <strong>not</strong> run.</p><p><strong>Bexleyheath Line:</strong> Trains between London Cannon Street and Slade Green via Bexleyheath will be diverted to run to / from Dartford.</p><p>Trains between London Victoria and Gravesend will run normally.</p><p>Additional trains will run between London Charing Cross and Dartford via Bexleyheath.</p><p><strong>Sunday:</strong></p><p><strong>There will be no trains at London Cannon Street.</strong></p><p><strong>Woolwich Line: </strong>Trains between London Cannon Street and Slade Green via Greenwich, and between London Cannon Street and Dartford via Lewisham and Woolwich Arsenal will <strong>not</strong> run.</p><p><strong>Bexleyheath Line: </strong>Trains between London Cannon Street and Slade Green via Bexleyheath will run to / from London Bridge, and will also be diverted to run to / from Dartford.</p><p>Trains between London Victoria and Dartford will run normally.</p><p><strong>Accessible replacement buses will run between:</strong></p><p></p><ul><li>Lewisham and Dartford via New Cross, Greenwich and Woolwich Arsenal </li></ul><p><strong></strong></p><p><strong>Alternative travel options:</strong></p><p>You can use London Underground between Cannon Street, Charing Cross, Embankment, Waterloo, Southwark and London Bridge at no extra cost.</p><p>You can use Docklands Light Railway between Lewisham and Greenwich at no extra cost.</p><p><strong>The following stations will be closed all weekend, and will only be served by replacement buses:</strong></p><p></p><ul><li>Deptford</li><li>Greenwich</li><li>Maze Hill</li><li>Westcombe Park</li><li>Charlton</li><li>Woolwich Dockyard</li><li>Woolwich Arsenal</li><li>Plumstead</li><li>Abbey Wood (Elizabeth line services will still operate)</li><li>Belvedere</li><li>Erith</li><li>Slade Green</li></ul><p><strong></strong></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p>You can plan your journey on Docklands Light Railway /  London Underground by using the Transport for London <a href="https://tfl.gov.uk/plan-a-journey/" title="">Journey Planner</a> </p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/lewisham-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Cannon Street and Slade Green via Greenwich / Bexleyheath </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-12T10:36:39.002Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-06T13:33:28.993Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>86585DD672A9443099872332E41B5D11</IncidentNumber>
+    <Version>20260506133328</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-14T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[No trains via Ramsgate on Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Margate and Minster and between Ramsgate and Sandwich, closing all lines.</p><p><strong>Paddock Wood line: </strong>Trains between London Charing Cross and Ramsgate via Canterbury West will only run between London Charing Cross and Ashford International.</p><p>Trains between London Charing Cross and Dover Priory will be extended to run to and from Minster via Sandwich and Dover Priory.  These trains will detach / attach a portion of coaches at Ashford International which will run between Ashford International and Minster calling at all stations via Canterbury West.</p><p><strong>Sole Street line: </strong>Trains between London Victoria and Ramsgate via Chatham will only run between London Victoria and Margate.</p><p><strong>Highspeed via Ashford International:</strong> Trains between London St Pancras International and Margate via Canterbury West will only run between London St Pancras International and Minster.</p><p>Trains between London St Pancras International and Ramsgate via Dover Priory will only run between London St Pancras International and Dover Priory.</p><p><strong>Highspeed via Gravesend:</strong> Trains between London St Pancras International and Ramsgate via Faversham will only run between London St Pancras International and Margate.</p><p><strong>Accessible replacement buses will run between:</strong></p><ul><li>Minster and Margate calling at Ramsgate and Broadstairs</li><li>Minster and Ramsgate calling at Thanet Parkway</li><li>Ramsgate and Margate calling at all stations</li></ul><p><strong></strong></p><p><strong>The following stations will be closed and will only be served by accessible buses:</strong></p><ul><li>Thanet Parkway</li><li>Ramsgate</li><li>Dumpton Park</li><li>Broadstairs</li></ul><p></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/ramsgate-14-june-20260614/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All routes to, from or via Ramsgate</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-12T11:08:00.411Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-03T12:44:40.597Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>59F99170C8924C4F83550463BECA8CE0</IncidentNumber>
+    <Version>20260603124440</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-19T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning Southeastern services between Monday 15 and Friday 19 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight at various locations on the Southeastern network, closing some lines.</p><p><strong>Monday only:</strong></p><p>From 22:45 until the end of service, accessible buses will replace trains between Tonbridge and Wadhurst / Hastings.</p><p><strong>Monday, Wednesday and Thursday:</strong></p><p>The 22:10 London Victoria to Dover Priory will run non-stop between Faversham and Dover Priory. </p><p><strong>Accessible buses will run  between:</strong></p><ul><li>Faversham and Dover Priory, calling at Canterbury East only</li><li>Canterbury East and Kearsney, calling at all stations</li><li>From 23:45 until the end of service, accessible buses replace trains between Sittingbourne, Herne Bay and Ramsgate. A minibus will run between Sittingbourne and Teynham*</li></ul><p></p><p>*If you are travelling to or from Teynham and have additional assistance  requirements we recommend you contact the <a href="https://www.southeasternrailway.co.uk/help/support/accessible-travel" title="">Southeastern accessible travel team</a>, send #Assist to 07866 002960 on WhatsApp or use the help point at the station so Southeastern can ensure appropriate transport is available for you.</p><p>The 23:20 and 23:50 London St Pancras International to Faversham services will be replaced by accessible buses between Ebbsfleet International, Gillingham (Kent) and Faversham, calling at all stations except Higham, Newington and Teynham.</p><p>From 23:45 until the end of service, services between Bromley North and Grove Park will <strong>not</strong> run. You will be able to use London Buses routes 126 and 261 at no extra cost between Bromley North and Grove Park.</p><p><strong>Tuesday only:</strong></p><p>From 23:40 until the end of service accessible buses replace trains between Tunbridge Wells and Hastings and will run between:</p><ul><li>Tunbridge Wells and Hastings, calling at Wadhurst, Battle, West St Leonards and St Leonards Warrior Square</li><li>Tunbridge Wells and Robertsbridge (calling at all stations)</li><li>Battle and Crowhurst (mini bus shuttle)*</li></ul><p></p><p>*If you are travelling to or from Crowhurst and have additional assistance  requirements we recommend you contact the <a href="https://www.southeasternrailway.co.uk/help/support/accessible-travel" title="">Southeastern accessible travel team</a>, send #Assist to 07866 002960 on WhatsApp or use the help point at the station so Southeastern can ensure appropriate transport is available for you.</p><p><strong>Tuesday, Thursday and Friday:</strong></p><p>From 00:15 until the end of service, services between London Victoria and Orpington via Beckenham Junction will be diverted and run non-stop between London Victoria and Shortlands. Accessible replacement buses will run between London Victoria and Orpington via Beckenham Junction calling at all stations except Brixton and also between Bromley South and London Victoria calling at all stations except Brixton. If you are travelling to / from Brixton, you can use London Underground between Victoria and Brixton at no extra cost.</p><p><strong>Wednesday, Thursday and Friday:</strong></p><p>From 01:15 until the end of service, accessible buses replace trains between Slade Green and Gravesend.</p><p>After 00:45, the last train between London and Dartford via Bexleyheath will be diverted to terminate at Slade Green, and connect with a replacement bus service running between Slade Green and Gravesend.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p>You can plan your journey on London Buses / Underground by using the Transport for London <a href="https://tfl.gov.uk/plan-a-journey/" title="">Journey Planner</a> </p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/se-midweek-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Various Southeastern routes</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-18T07:03:55.115Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-25T10:02:39.766Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>5A765FC3179C455FAC72BF5DC3930035</IncidentNumber>
+    <Version>20260325100239</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-20T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-21T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between Beckenham Junction / Lewisham and Hayes (Kent) on Saturday 20 and Sunday 21 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between New Beckenham and Hayes (Kent) all weekend. On Sunday the work will be extended and the lines between Lewisham and New Beckenham will also be closed. </p><p><strong>Saturday:</strong></p><p>Trains between London Charing Cross and Hayes (Kent) will run every 30 minutes, and will be diverted after New Beckenham to run to and from Beckenham Junction.</p><p><strong>Sunday:</strong></p><p>Trains between London Charing Cross and Hayes will <strong>not </strong>run.</p><p><strong>Accessible replacement buses will run between:</strong></p><p><strong>Saturday:</strong></p><ul><li>Beckenham Junction and Hayes (Kent) calling at all stations</li></ul><p><strong></strong></p><p><strong>Sunday:</strong></p><ul><li>Lewisham and Hayes (Kent) calling at all stations</li></ul><p><strong></strong></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/beckenham-jcn-20-june-20260620/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Charing Cross and Hayes (Kent)</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-19T15:45:39.812Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-25T10:06:54.303Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>CB394598892F419E9A898278316FC6DA</IncidentNumber>
+    <Version>20260325100654</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-20T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-20T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace late night trains between Ebbsfleet International and Ashford International on Saturday 20 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Ebbsfleet International and Ashford International<strong>,</strong> closing some lines.</p><p>From approximately 23:00, accessible buses will replace trains between Ebbsfleet International and Ashford International via Maidstone East. </p><p>Trains between London St Pancras International and Ramsgate / Margate via Ashford International will be diverted to run via Faversham.</p><p>The 23:50 London St Pancras International to Faversham will depart <strong>later</strong> at 00:12 <strong>(Sun)</strong>.</p><p>The following additional trains will run between Ashford International  and London Charing Cross calling at London Bridge and Waterloo East:</p><ul><li>23:20 Ashford International to London Charing Cross</li><li>00:40 (Sun) London Charing Cross to Ashford International </li></ul><p><strong></strong></p><p><strong>Alternative travel options:</strong></p><p>You can use London Underground, Elizabeth line and Docklands Light Railway between Stratford and Central London at no extra cost to connect with the additional trains at London Charing Cross, Waterloo East and London Bridge.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p>You can plan your journey on London Underground / Docklands Light Railway by using the Transport for London <a href="https://tfl.gov.uk/plan-a-journey/" title="">Journey Planner</a>.</p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/ebbsfleet-int-20-june-20260620/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London St Pancras International and Ramsgate / Margate</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-19T16:07:30.833Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-15T08:57:45.552Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>60057629C227434D8360E10C8E1BF248</IncidentNumber>
+    <Version>20260515085745</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-21T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-21T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between Ebbsfleet International / Ashford International and Canterbury West on Sunday 21 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place near Ashford International, blocking the lines between the station and the High Speed line to Ebbsfleet International, and the line between Ashford International and Canterbury West.</p><p><strong>Highspeed via Ashford International:</strong> Trains between London St Pancras International and Margate will <strong>not</strong> run and services between London St Pancras International and Ramsgate via Dover Priory will only run between London St Pancras International and Ebbsfleet International.</p><p>A reduced service will run between London St Pancras International and Ebbsfleet International.  Additional trains will run between Canterbury West and Margate.</p><p>If you are travelling between London St Pancras International, Stratford International or Ebbsfleet International and stations between Ashford International and Ramsgate via Dover Priory or Canterbury West, you will need to use the replacement bus between Ebbsfleet International and Maidstone East, and then connecting trains between Maidstone East and Ashford International. Connecting trains will run between Ashford International and Ramsgate via Dover Priory, and replacement buses between Ashford International and Canterbury West. Alternatively you can use Southeastern mainline trains between London Charing Cross, London Bridge and Ashford International via Tonbridge.</p><p><strong>Highspeed via Gravesend:</strong> Additional trains will run between London St Pancras International and Dover Priory via Gravesend, Faversham and Canterbury East.</p><p><strong>Paddock Wood line:</strong> Trains between London Charing Cross and Ramsgate via Canterbury West will only run between London Charing Cross and Ashford International.</p><p>Trains between London Charing Cross and Dover Priory will also only run between London Charing Cross and Ashford International, but additional fast trains will run between London Charing Cross and Ramsgate via Dover Priory.</p><p><strong>Accessible replacement buses will run between:</strong></p><p></p><ul><li>Ebbsfleet International and Maidstone East</li><li>Ashford International and Canterbury West non-stop</li><li>Ashford International and Canterbury West calling at all stations</li></ul><p></p><p>The following stations will be closed all day and will only be served by replacement buses:</p><p></p><ul><li>Wye</li><li>Chilham</li><li>Chartham</li></ul><p></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/afk-21-june-20260621/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Charing Cross and Ramsgate and between London St Pancras International and Margate</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-19T16:26:00.333Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-01T15:41:50.279Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>D2B2E57215EA4605A4157265A610F243</IncidentNumber>
+    <Version>20260514113144</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-21T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-21T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[No trains via Swanley on Sunday 21 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Bickley and Rochester all day, closing all the lines through Swanley.</p><h4>Southeastern:</h4><p><strong>Sole Street line: </strong>Trains between London Victoria and Ramsgate via Chatham and will be diverted to run non stop between London Victoria and Strood. At Faversham, a portion of the train will be attached / detached to run between Faversham and Dover Priory. </p><p>Stopping services between London Victoria and Dover Priory via Denmark Hill will <strong>not</strong> run.</p><p><strong>Maidstone East line: </strong>Trains between London Victoria and Ashford International via Maidstone East will only run between Borough Green & Wrotham and Ashford International.</p><p>Additional trains will run between London Victoria and Bromley South via Denmark Hill.</p><p><strong>Accessible replacement buses will run between:</strong></p><p></p><ul><li>Bromley South and Meopham calling at all stations</li><li>Meopham and Strood non-stop</li><li>Bromley South and Borough Green & Wrotham calling at St Mary Cray, Swanley and Otford</li><li>A minibus will run between Meopham and Sole Street*</li></ul><p></p><p>*If you are travelling to or from Sole Street and have additional assistance  requirements we recommend you contact the <a href="https://www.southeasternrailway.co.uk/help/support/accessible-travel" title="">Southeastern accessible travel team</a>, send #Assist to 07866 002960 on WhatsApp or use the help point at the station so Southeastern can ensure appropriate transport is available for you.</p><p>The following Southeastern stations will be closed all day and will only be served by replacement buses:</p><p></p><ul><li>St Mary Cray</li><li>Swanley</li><li>Farningham Road</li><li>Longfield</li><li>Meopham</li><li>Sole Street</li><li>Eynsford</li><li>Shoreham (Kent)</li><li>Otford</li><li>Bat & Ball</li></ul><p></p><h4>Thameslink:</h4><p>Buses will replace trains between Bromley South and Sevenoaks via Swanley. </p><p>Thameslink Sevenoaks services will run to a revised timetable and divert via Petts Wood, calling additionally at Petts Wood and Orpington. </p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/swanley-21-june-20260621/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>TL</OperatorRef>
+          <OperatorName>Thameslink</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>All routes via Swanley</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-19T16:56:41.821Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-10T09:57:35.712Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>0E7F778C906143BB8DFD14DAFDA0D2AA</IncidentNumber>
+    <Version>20260610095735</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-22T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-26T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning Southeastern service between Monday 22 and Friday 26 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight at various locations on the Southeastern network, closing some lines.</p><p><strong>Monday only:</strong></p><p>From 22:45 until the end of service, accessible buses replace trains between Tonbridge and Wadhurst / Hastings.</p><p><strong>Monday to Thursday:</strong></p><p>From 23:10 until the end of service, accessible buses replace trains between Maidstone East and Ashford International.</p><p>The 22:25 and 23:25 London Victoria to Ashford International services will be diverted between Otford and Ashford International to run via Sevenoaks.  Change at Otford for a connecting service to Maidstone East, and the onward replacement bus for stations to Ashford International.</p><p>The 00:25 London Victoria to Ashford International service will only run between London Victoria and Maidstone East.</p><p>Trains between London Charing Cross / London Cannon Street and Maidstone East / Ashford International will only run to / from Maidstone East and will stop additionally at Kemsing, East Malling and Barming.</p><p><strong>Monday, Wednesday and Thursday:</strong></p><p>The 23:20 and 23:50 London St Pancras International to Faversham services will be replaced by accessible buses between Ebbsfleet International, Gillingham (Kent) and Faversham calling at all stations except Higham, Newington and Teynham.</p><p>From 23:20 until the end of service, accessible buses replace trains between Sittingbourne and Sheerness-on-Sea.</p><p><strong>Tuesday only:</strong></p><p>From 23:40 until the end of service accessible buses replace trains between Tunbridge Wells and Hastings and will run between:</p><p></p><ul><li>Tunbridge Wells and Hastings calling at Wadhurst, Battle, West St Leonards and St Leonards Warrior Square</li><li>Tunbridge Wells and Robertsbridge (calling at all stations)</li><li>Battle and Crowhurst (mini bus shuttle)*</li></ul><p>
+
+*If you are travelling to or from Crowhurst and have additional assistance  requirements we recommend you contact the <a href="https://www.southeasternrailway.co.uk/help/support/accessible-travel" title="">Southeastern accessible travel team</a>, send #Assist to 07866 002960 on WhatsApp or use the help point at the station so Southeastern can ensure appropriate transport is available for you.</p><p><strong>Tuesday to Friday:</strong></p><p>From 00:30 until the end of service, buses replace trains between Beckenham Junction (Tuesday, Wednesday and Friday) / Bromley South (Thursday) and Orpington calling at all stations.</p><p><strong>Tuesday, Thursday and Friday:</strong></p><p>From 00:10 until the end of service, accessible buses replace trains between Gillingham (Kent) and Faversham calling at all stations except Teynham. A connecting bus will run between Sittingbourne and Faversham via Teynham. A connecting train will run from Faversham to Ramsgate.</p><p><strong>Wednesday to Friday:</strong></p><p>From 00:30 until the end of service, trains towards Orpington & Sevenoaks will not stop at Lewisham. An accessible bus will leave Lewisham at 01:10  to Orpington calling at all stations.</p><p><strong>Thursday only:</strong></p><p>The 23:07 London St Pancras International to Ramsgate via Dover Priory service will run between Dover Priory and Ramsgate via an alternative route and will stop additionally at Faversham and  Margate. An accessible bus will run between Dover Priory and Ramsgate calling at all stations except Thanet Parkway.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/se-midweek-22-june-20260622/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SE</OperatorRef>
+          <OperatorName>Southeastern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Various Southeastern routes</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T05:55:46.322Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-20T06:01:50.635Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>294F46A27C6E4C0882234A65B467087E</IncidentNumber>
+    <Version>20260320060150</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-19T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning Avanti West Coast service to / from Wolverhampton from Monday 15 to Friday 19 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Birmingham New Street and Wolverhampton, closing some lines.</p><p><strong>Monday to Thursday:</strong></p><p>The 22:30 London Euston to Wolverhampton service, will <strong>terminate</strong> at Birmingham New Street. <strong>(Please note this train is diverted via Northampton Tuesday to Thursday, extending journey times).</strong>
+
+The 23:00 London Euston to Wolverhampton, will <strong>not</strong> run.</p><p>The 23:30 London Euston to Wolverhampton service, will <strong>terminate</strong> at Birmingham New Street. <strong>(Please note this train is diverted via Northampton Tuesday to Thursday, extending journey times).</strong></p><p><strong>Tuesday to Friday:</strong></p><p>The 04:57 Wolverhampton to London Euston, will <strong>start</strong> from Birmingham New Street, at booked time.</p><p>The 05:30 Birmingham New Street to Holyhead, will <strong>start</strong> from Wolverhampton, at booked time.</p><p>The 06:03 Wolverhampton to London Euston, will <strong>not</strong> run.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/wvh-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>VT</OperatorRef>
+          <OperatorName>Avanti West Coast</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Euston and Wolverhampton and between Birmingham New Street and Holyhead</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T05:59:58.176Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-24T10:44:43.353Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>8B04D0BF209D4FDAA39F67C10276B981</IncidentNumber>
+    <Version>20260324104443</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-16T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-18T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 21:04 Crewe to London Euston from Tuesday 16 to Thursday 18 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Rugby and Milton Keynes Central, closing some lines.</p><p>The 21:04 Crewe to London Euston will be diverted via Northampton, extending journey times.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/21-04-cre-eus-16-june-20260616/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>VT</OperatorRef>
+          <OperatorName>Avanti West Coast</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Crewe and London Euston</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T06:04:54.387Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-24T10:44:56.718Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>63243C239B3E4119892D3C385B5FD568</IncidentNumber>
+    <Version>20260324104456</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-16T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-18T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 22:14 Manchester Piccadilly to London Euston from Tuesday 16 to Thursday 18 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Rugby and Milton Keynes Central, closing some lines.</p><p>The 22:14 Manchester Piccadilly to London Euston will be diverted via Northampton, extending journey times.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/22-14-man-eus-16-june-20260616/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>VT</OperatorRef>
+          <OperatorName>Avanti West Coast</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Manchester Piccadilly and London Euston</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T06:42:29.914Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-03T12:21:43.712Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>63B5C59C0ADC44C1B4C1E5BA169F7645</IncidentNumber>
+    <Version>20260603122143</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-14T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 08:25 London Euston to Rugby service on Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between in the Rugby area, closing some lines.</p><p>The 08:25 London Euston to Rugby service is retimed to depart from London Euston <strong>earlier</strong> at 08:21 and will run <strong>earlier</strong> between London Euston and Northampton, then 11 minutes <strong>later</strong> between Northampton and Rugby.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/08-21-eus-rug-14-june-20260614/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>LN</OperatorRef>
+          <OperatorName>London Northwestern Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Euston and Rugby</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T06:50:25.972Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-20T07:21:37.913Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>7036310FA32645E3A015A4C68BBEE59D</IncidentNumber>
+    <Version>20260320072137</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-18T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 23:22 Birmingham New Street to Rugeley Trent Valley service from Monday 15 to Thursday 18 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Smethwick Rolfe Street and Penkridge, closing some lines.</p><p>The 23:22 Birmingham New Street to Rugeley Trent Valley service will <strong>terminate</strong> at Walsall.</p><p>A rail replacement bus service will operate departing from Walsall at 23:58 and calling at Bloxwich, Bloxwich North, Landywood, Cannock, Hednesford, Rugeley Town, arriving at Rugeley Trent Valley at 01:00.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/smethwick-rolfe-street-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>WM</OperatorRef>
+          <OperatorName>West Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Birmingham New Street and Rugeley Trent Valley </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T07:20:08.000Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-05T15:17:49.275Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>7736A2D131BF49C69A7C4344828BA824</IncidentNumber>
+    <Version>20260505151749</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended morning / late night services to / from Bushey on Saturday 13 and Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between North Wembley and Bletchley, closing some lines.</p><p>The following services will be amended:</p><p><strong>Saturday:</strong></p><ul><li>00:39 (Saturday morning) London Euston to Northampton service will <strong>not </strong>call at Bushey</li><li>22:21 London Euston to Northampton service will <strong>not </strong>call at Bushey</li><li>23:30 London Euston to Northampton service will <strong>not </strong>call at Bushey</li></ul><p><strong></strong></p><p><strong>Saturday and Sunday:</strong></p><ul><li>00:09 London Euston to Northampton service will <strong>not </strong>call at Bushey</li></ul><p><strong></strong></p><p><strong>Sunday:</strong></p><p>Until 12:00, services between London Euston and Northampton / Birmingham New Street will <strong>not </strong>call at Bushey, or call to <strong>drop off</strong> only.</p><p>Additionally, on Sunday night:</p><ul><li>23:40 London Euston to Northampton service will <strong>not </strong>call at Bushey</li></ul><p><strong></strong></p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/bsh-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>LN</OperatorRef>
+          <OperatorName>London Northwestern Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Euston and Northampton / Birmingham New Street</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T07:26:37.040Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-20T07:26:37.040Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>1DD1B4C0BAFC4A238A58588230B9790F</IncidentNumber>
+    <Version>20260320072637</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-13T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 22:36 Leamington Spa to Coventry service on Saturday 13 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Rugby and Birmingham International, closing some lines.</p><p>The 22:36 Leamington Spa to Coventry train service will <strong>not </strong>run and will be replaced by a bus.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a> </p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/lms-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>WM</OperatorRef>
+          <OperatorName>West Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Leamington Spa and Coventry </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T07:33:00.413Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-31T12:37:26.516Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>9144A30AA78E4B54A8DBFD7903ECE330</IncidentNumber>
+    <Version>20260331123726</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-13T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 21:33 Liverpool Lime Street to Coventry service on Saturday 13 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Birmingham International and Rugby, closing some lines.</p><p>The 21:33 Liverpool Lime Street to Coventry service will terminate at Birmingham International (at 23:40). A rail replacement bus will operate between Birmingham International and Coventry, departing from Birmingham International at 23:50, arriving at Coventry at 00:15.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/21-33-liv-cov-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>LN</OperatorRef>
+          <OperatorName>London Northwestern Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Liverpool Lime Street and Coventry</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T07:38:57.242Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-20T07:38:57.242Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>A509EABA392C4DA78033A15932880418</IncidentNumber>
+    <Version>20260320073857</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-13T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended West Midlands Railway services between Lichfield Trent Valley and Birmingham New Street on Saturday 13 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Water Orton and Birmingham New Street, closing some lines.</p><p>Trains between Lichfield Trent Valley and Bromsgrove will run to a slightly amended timetable between Lichfield Trent Valley and Birmingham New Street.</p><p>Some trains from Lichfield Trent Valley to Bromsgrove / Longbridge will run slightly earlier between Lichfield Trent Valley and Birmingham New Street.</p><p>Some trains from Bromsgrove to Lichfield Trent Valley will run slightly later between Birmingham New Street and Lichfield Trent Valley.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/ltv-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>WM</OperatorRef>
+          <OperatorName>West Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Lichfield Trent Valley and Bromsgrove </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T07:46:43.303Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-04-23T09:18:20.119Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>EE1943876F61418DAF962566ADE152BB</IncidentNumber>
+    <Version>20260423091820</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-14T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between Leamington Spa / Rugby and Nuneaton / Birmingham International on Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Rugby and Birmingham International, closing all lines.</p><h4>Avanti West Coast:</h4><p>Trains between London Euston and Birmingham New Street / Wolverhampton will not run. </p><p>Watford Junction and Rugby stations will be served by trains running between London Euston and Liverpool Lime Street / Manchester Piccadilly instead.
+
+Trains between London Euston to Crewe / Preston / Scotland via Birmingham New Street will start / terminate at Birmingham International. </p><p>Rail replacement buses will operate between Rugby and Birmingham International, calling at Coventry.</p><h4>CrossCountry:</h4><p>Trains will be diverted, and will not call at Coventry or Birmingham International.</p><p>Replacement buses will run between Leamington Spa and Birmingham International via Coventry.</p><h4>London Northwestern Railway:</h4><p>Train services between London Euston / Northampton and Birmingham New Street will run between London Euston / Northampton and Rugby and also between Birmingham International and Birmingham New Street only.</p><p>Trains between Coventry and Birmingham New Street will run between Birmingham International and Birmingham New Street only.</p><p>Rail replacement buses will operate between Rugby / Coventry and Birmingham International.</p><h4>West Midlands Railway:</h4><p>Rail replacement buses will operate between Leamington Spa and Nuneaton.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/bhi-14-june-20260614/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>VT</OperatorRef>
+          <OperatorName>Avanti West Coast</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>XC</OperatorRef>
+          <OperatorName>CrossCountry</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>LN</OperatorRef>
+          <OperatorName>London Northwestern Railway</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>WM</OperatorRef>
+          <OperatorName>West Midlands Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Avanti West Coast services to / from London Euston</p><p>CrossCountry between Bournemouth / Reading and Manchester Piccadilly</p><p>London Northwestern Railway between London Euston / Northampton and Birmingham New Street</p><p>West Midlands Railway between Leamington Spa and Nuneaton</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T08:06:17.125Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-20T08:08:03.693Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>9F2DD2626EA0474DB3DD268A20DFE4F3</IncidentNumber>
+    <Version>20260320080803</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-19T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 23:09 Birmingham New Street to Nottingham service from Monday 15 to Friday 19 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Derby and Nottingham, closing some lines.</p><p>The 23:09 Birmingham New Street to Nottingham service will <strong>terminate</strong> at Derby.  A rail replacement bus will operate from Derby to Nottingham.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/23-09-bhm-not-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>XC</OperatorRef>
+          <OperatorName>CrossCountry</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Birmingham New Street and Nottingham </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T08:11:01.219Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-20T08:13:19.799Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>8275B9B89AF74BB2AEA8C619E9624D93</IncidentNumber>
+    <Version>20260320081319</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-14T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 10:22 Bristol Temple Meads to Cardiff Central service on Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Bristol Parkway and Newport until 11:45, closing some lines.</p><p>The 10:22 Bristol Temple Meads to Cardiff Central service will not run. You can use other services to complete your journey at no extra cost.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/10-22-bri-cdf-14-june-20260614/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>XC</OperatorRef>
+          <OperatorName>CrossCountry</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Bristol Temple Meads and Cardiff Central</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T08:18:51.550Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-03T14:30:08.005Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>E483D9ED9F374C9D9F746A53DEBBEB58</IncidentNumber>
+    <Version>20260603143008</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between Birmingham New Street and Leicester via Water Orton / Coleshill Parkway on Saturday 13 and Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Birmingham New Street and Leicester, closing all lines via Water Orton / Coleshill Parkway.</p><p>Trains that run between Birmingham New Street and Cambridge / Stansted Airport will run between Leicester and Cambridge / Stansted Airport only.</p><p>Trains that usually run between Cardiff Central and Nottingham will run between Cardiff Central and Birmingham New Street, and between Coleshill Parkway and Nottingham.</p><p>Trains to / from North East England / Scotland will be diverted, extending journey times by up to 60 minutes. These trains will not call at Tamworth.</p><p>Replacement buses will run between Birmingham New Street and Leicester via Water Orton / Coleshill Parkway.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/water-orton-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>XC</OperatorRef>
+          <OperatorName>CrossCountry</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>CrossCountry between Penzance and Leeds / Edinburgh, Plymouth and Leeds / Glasgow Central / Dundee / Aberdeen, between Birmingham New Street and Leicester / Nottingham / Cambridge / Stansted Airport / York / Newcastle / Edinburgh, between Cardiff Central and Nottingham, between Plymouth / Reading and Derby, and also between Bristol Temple Meads and Edinburgh</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T08:36:19.523Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-25T09:41:38.830Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>EE9630E1771444158A948A9EB0F4B8C5</IncidentNumber>
+    <Version>20260325094138</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-19T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace late night / early morning trains between Grays and Pitsea from Monday 15 to Friday 19 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Grays and Pitsea, closing all lines.</p><p>Between 22:20 (Monday to Thursday) and 04:20 (Tuesday to Friday), c2c services will start / terminate at Grays, rail replacement buses will operate between Grays and Pitsea.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a>.</p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/grays-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>CC</OperatorRef>
+          <OperatorName>c2c</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Fenchurch Street and Shoeburyness </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T08:55:57.906Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-14T08:13:54.455Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>82E53A3855964EF593EA8D3DF8DDCF76</IncidentNumber>
+    <Version>20260514081354</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between New Malden and Surbiton on Saturday 13 and Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between New Malden and Surbiton, closing all lines.</p><p>Buses will replace trains between New Malden and Surbiton.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/berrylands-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>SW</OperatorRef>
+          <OperatorName>South Western Railway</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between London Waterloo and Hampton Court / Guildford / Farnham / Alton / Woking / Basingstoke / Portsmouth Harbour / Salisbury / Southampton Central / Poole / Weymouth / Exeter St Davids </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-20T10:13:06.320Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-15T08:01:38.710Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>25D623F081A8491580FE6833321A79BE</IncidentNumber>
+    <Version>20260515080138</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-14T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Buses replace trains between Aylesbury Vale Parkway and Amersham on Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place in the Coventry area on the West Coast Main line, closing the route between Birmingham New Street and London Euston.</p><p>Chiltern Railways are strengthening their service between Birmingham Snow Hill / Birmingham Moor Street and London Marylebone, meaning no Chiltern Railways trains will run between Aylesbury Vale Parkway and London Marylebone.</p><p>Rail replacement buses will operate between Aylesbury Vale Parkway and Amersham.</p><p>London Underground Metropolitan line will be available between Amersham and Baker Street at your own cost.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p>You can plan your journey on London Underground by using the Transport for London <a href="https://tfl.gov.uk/plan-a-journey/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/amersham-14-june-20260614/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>CH</OperatorRef>
+          <OperatorName>Chiltern Railways</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Aylesbury Vale Parkway and London Marylebone </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T06:35:14.003Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-06T10:40:25.657Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>C5300E9828584793BD5A3BDDB4109C49</IncidentNumber>
+    <Version>20260506104025</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-13T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended Northern services to / from Earlestown on Saturday 13 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place in the Earlestown area, closing some lines.</p><p>As a result, Northern trains <strong>from Chester</strong> will not call at Earlestown. Northern trains <strong>towards Chester</strong> are unaffected and will run as normal.</p><p>For Earlestown, you should use alternative train services at no extra cost.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/earlestown-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Northern between Chester and Leeds</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T06:51:33.986Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-07T12:36:54.018Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>B51DEFEBB961458AB815871C2E9329C2</IncidentNumber>
+    <Version>20260507123654</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-18T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night Northern service to / from Manchester Piccadilly from Monday 15 to Thursday 18 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Hadfield and Manchester Piccadilly, closing some lines.</p><p><strong>Monday to Thursday:</strong></p><p>The 22:17 Stoke-on-Trent to Manchester Piccadilly service will <strong>terminate</strong> at Stockport.  Onward train services are available.</p><p>The 22:45 Sheffield to Manchester Piccadilly service will <strong>not</strong> call at New Mills Central, Strines, Marple, Romiley, Bredbury, Brinnington, Reddish North, Ryder Brow, Belle Vue and Ashburys, and will call additionally at Stockport.  A bus will be provided from Chinley to Manchester Piccadilly to serve intermediate stations.</p><p>The 23:16 Manchester Piccadilly to Macclesfield service will <strong>not </strong>run.  The 21:55 Blackpool North to Manchester Airport service will be extended to Macclesfield in its place.</p><p>The 23:18 New Mills Central to Manchester Piccadilly train will <strong>not</strong> run and will be replaced by a bus.</p><p>The 23:25 Manchester Piccadilly to New Mills Central train will <strong>not</strong> run and will be replaced by a bus.</p><p>The 23:29 Manchester Piccadilly to Glossop service will <strong>not</strong> run.  A bus will be provided between Manchester Piccadilly and Hadfield, calling at Ashburys, Gorton, Guide Bridge, Flowery Field, Newton for Hyde, Godley, Glossop and Dinting.  A mini-bus will be provided between Godley and Hadfield, calling at Hattersley, Broadbottom, Glossop and Dinting.</p><p>The 23:37 Manchester Piccadilly to Manchester Airport service will <strong>not </strong>run.  The 22:22 Blackpool North to Manchester Airport service will call additionally at Mauldeth Road, Burnage, East Didsbury, Gatley and Heald Green.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/hadfield-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Various routes to / from Manchester Piccadilly</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T07:02:01.305Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-30T10:49:58.666Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>C5B2382B777A48DE8895FC960B992ACA</IncidentNumber>
+    <Version>20260323070201</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-18T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night service to / from Clitheroe from Monday 15 to Thursday 18 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Blackburn and Hellifield, closing some lines.</p><p>The 21:52 Rochdale to Clitheroe service will <strong>terminate</strong> at Blackburn. A bus will be provided from Blackburn to Clitheroe.</p><p>The 23:42 Clitheroe to Blackburn train service will be <strong>replaced by a bus</strong>.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/clitheroe-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Blackburn / Rochdale and Clitheroe </p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T07:20:11.501Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-05-07T12:07:05.338Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>20BDB36249B24C4C9063789C11D6373F</IncidentNumber>
+    <Version>20260507120705</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-19T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended late night / early morning Northern service to / from Barrow-in-Furness from Monday 15 to Friday 19 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place overnight between Carnforth and Barrow-in-Furness, closing some lines.</p><p><strong>Monday to Thursday:</strong></p><p>The 20:44 Barrow-in-Furness to Lancaster service will <strong>not </strong>run.  Customers should travel on the next available service.</p><p>The 21:59 Manchester Airport to Barrow-in-Furness service will terminate at Lancaster.  A bus will be provided from Lancaster to Barrow-in-Furness.  A mini-bus will be provided from Lancaster to Grange-over-Sands, calling at Silverdale and Arnside.</p><p>The 22:09 Lancaster to Barrow-in-Furness train service will <strong>not</strong> run and will be replaced by a bus.  A mini-bus will be provided from Lancaster to Grange-over-Sands, calling at Silverdale and Arnside.</p><p><strong>Tuesday to Friday:</strong></p><p>The 04:58 Barrow-in-Furness to Manchester Airport service will <strong>start</strong> from Lancaster.  A bus will be provided from Barrow-in-Furness to Lancaster, departing Barrow-in-Furness <strong>earlier</strong> at 03:45 to connect with the train at Lancaster.  A mini-bus will be provided from Grange-over-Sands to Lancaster (departing Grange-over-Sands at 04:20), calling at Arnside.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/bif-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between Manchester Airport / Lancaster and Barrow-in-Furness</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T07:27:37.507Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-06-03T12:01:47.685Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>453203D2BB0D410396344FE982CB7C5B</IncidentNumber>
+    <Version>20260603120147</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-13T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-14T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended train service between Leeds and York on Saturday 13 and Sunday 14 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Leeds and Micklefield / Selby, closing all lines.</p><h4>CrossCountry:</h4><p>Except for trains which start / terminate at Leeds, trains will not call at Leeds or Wakefield Westgate. Trains will be diverted to run via Doncaster, additionally calling there.</p><p>You can use alternative train services at no extra cost for travel to / from Leeds / Wakefield Westgate.</p><h4>Northern:</h4><p>Trains between Blackpool North and York will terminate / start from Leeds. A replacement bus service will operate between Leeds and York.</p><p>Trains between Halifax and Hull will run between Halifax and Leeds and between Selby and Hull. A replacement bus service will operate between Leeds and Selby.</p><h4>TransPennine Express:</h4><p>An amended train service will run between Leeds and Hull via Castleford, and between Leeds and Redcar Central via Castleford. These diverted trains will have extended journey times.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p><p><strong>Replacement bus travel advice:</strong></p><p>For helpful advice if you need to travel on a rail replacement service, including accessibility and bicycle information, please use our <a href="https://www.nationalrail.co.uk/travel-information/rail-replacement-services/" title="">Rail Replacement Services page</a>.</p><p>You can find the pick-up and set-down location of rail replacement services by checking station signage or by searching for your station on our <a href="https://www.nationalrail.co.uk/stations/" title="">Find a Station page</a><a href="https://www.nationalrail.co.uk/find-a-station/" title="">.</a></p><p>Please be advised that replacement vehicles may be busier than usual, and you should allow extra time for your journey.</p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/micklefield-13-june-20260613/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>XC</OperatorRef>
+          <OperatorName>CrossCountry</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>NT</OperatorRef>
+          <OperatorName>Northern</OperatorName>
+        </AffectedOperator>
+        <AffectedOperator>
+          <OperatorRef>TP</OperatorRef>
+          <OperatorName>TransPennine Express</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>CrossCountry between Penzance / Bristol Temple Meads / Birmingham New Street / Sheffield / Leeds and Edinburgh, and also between Plymouth and Newcastle / Glasgow Central / Dundee / Aberdeen</p><p>Northern between Blackpool North / Leeds and York, between Leeds and Selby / Hull, and also between Halifax and Hull</p><p>TransPennine Express between Liverpool Lime Street / Leeds and Hull, between Manchester Airport and York / Redcar Central, and also between Manchester Victoria and Scarborough / Redcar Central</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+  <PtIncident>
+    <CreationTime>2026-03-23T08:16:30.884Z</CreationTime>
+    <ChangeHistory>
+      <com:ChangedBy>NRE CMS Editor</com:ChangedBy>
+      <com:LastChangedDate>2026-03-24T10:47:42.141Z</com:LastChangedDate>
+    </ChangeHistory>
+    <IncidentNumber>29C036E0CBC04E8598FCFDB102760D54</IncidentNumber>
+    <Version>20260324104742</Version>
+    <ValidityPeriod>
+      <com:StartTime>2026-06-15T00:00:00.000+01:00</com:StartTime>
+      <com:EndTime>2026-06-19T23:59:00.000+01:00</com:EndTime>
+    </ValidityPeriod>
+    <Planned>true</Planned>
+    <Summary><![CDATA[Amended 05:32 York to Liverpool Lime Street from Monday 15 to Friday 19 June]]></Summary>
+    <Description><![CDATA[<p><a href="https://www.nationalrail.co.uk/travel-information/engineering-works-explained/" title="">Engineering work</a> is taking place between Manchester Victoria and Greenfield, closing some lines.</p><p>The 05:32 York to Liverpool Lime Street will <strong>not </strong>call at Stalybridge. Customers for Stalybridge should travel by an alternative TransPennine Express service.</p><p><strong>Check before you travel:</strong></p><p>You can plan your journey using the National Rail Enquiries <a href="https://www.nationalrail.co.uk/journey-planner/" title="">Journey Planner</a></p>]]></Description>
+    <InfoLinks>
+      <InfoLink>
+        <Uri>https://www.nationalrail.co.uk/engineering-works/05-32-yrk-liv-15-june-20260615/</Uri>
+        <Label>Incident detail page</Label>
+      </InfoLink>
+    </InfoLinks>
+    <Affects>
+      <Operators>
+        <AffectedOperator>
+          <OperatorRef>TP</OperatorRef>
+          <OperatorName>TransPennine Express</OperatorName>
+        </AffectedOperator>
+      </Operators>
+      <RoutesAffected><![CDATA[<p>Between York and Liverpool Lime Street</p>]]></RoutesAffected>
+    </Affects>
+    <IncidentPriority>2</IncidentPriority>
+  </PtIncident>
+</Incidents>

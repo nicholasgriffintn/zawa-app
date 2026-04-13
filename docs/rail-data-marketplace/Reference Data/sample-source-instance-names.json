@@ -1,0 +1,23 @@
+[
+  {
+    "id": "AM01",
+    "name": "Southern Metropolitan",
+    "Xmlns": {
+      "Count": 2
+    }
+  },
+  {
+    "id": "AM02",
+    "name": "Southern Suburban",
+    "Xmlns": {
+      "Count": 2
+    }
+  },
+  {
+    "id": "AM03",
+    "name": "Birmingham New Street",
+    "Xmlns": {
+      "Count": 2
+    }
+  }
+]

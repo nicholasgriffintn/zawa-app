@@ -1,0 +1,33 @@
+packages:
+  - apps/*
+  - packages/*
+  - tools/*
+
+catalog:
+  "@cloudflare/vite-plugin": ^1.32.2
+  "@cloudflare/workers-types": ^4
+  "@types/node": ^24
+  "@vitejs/plugin-react": ^6.0.1
+  fast-xml-parser: ^5.8.0
+  kafkajs: ^2.2.4
+  playwright: ^1.60.0
+  sass: ^1.101.0
+  typescript: ^5
+  tsx: ^4.21.0
+  vite: npm:@voidzero-dev/vite-plus-core@latest
+  vite-plus: latest
+  vitest: npm:@voidzero-dev/vite-plus-test@latest
+  wrangler: ^4
+  zod: ^4
+
+catalogMode: prefer
+overrides:
+  vite: "catalog:"
+  vitest: "catalog:"
+peerDependencyRules:
+  allowAny:
+    - vite
+    - vitest
+  allowedVersions:
+    vite: "*"
+    vitest: "*"

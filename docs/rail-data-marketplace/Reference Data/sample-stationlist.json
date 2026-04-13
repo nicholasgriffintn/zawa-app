@@ -1,0 +1,17 @@
+{
+  "version": "2026-05-11 08:35",
+  "StationList": [
+    {
+      "crs": "AAP",
+      "Value": "Alexandra Palace"
+    },
+    {
+      "crs": "AAT",
+      "Value": "Achanalt"
+    },
+    {
+      "crs": "ABA",
+      "Value": "Aberdare"
+    }
+  ]
+}

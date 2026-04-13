@@ -1,0 +1,43 @@
+{
+  "name": "zawa",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ready": "vp fmt && vp lint && vp run -r build",
+    "test": "echo \"I don't need tests, I don't want tests. Do not add them.\" && exit 0",
+    "prepare": "vp config",
+    "build": "pnpm -r build",
+    "check": "pnpm -r check",
+    "db:migrate:local": "pnpm -r db:migrate:local",
+    "db:migrate:preview": "pnpm -r db:migrate:preview",
+    "db:migrate:prod": "pnpm -r db:migrate:prod",
+    "dev": "pnpm --filter @zawa/edge build && pnpm --dir apps/edge exec wrangler dev -c wrangler.json -c ../projector/wrangler.json -c ../rdm-sync/wrangler.json --persist-to ../../.wrangler/state",
+    "dev:e2e": "pnpm --dir apps/rdm-sync exec wrangler dev -c wrangler.json -c ../projector/wrangler.json -c ../edge/wrangler.json --persist-to ../../.wrangler/state",
+    "dev:e2e:workers": "pnpm dev:e2e",
+    "dev:e2e:rdm-ingest": "pnpm dev:rdm-ingest",
+    "dev:edge": "pnpm --filter @zawa/edge dev",
+    "dev:rdm-ingest": "pnpm --filter @zawa/rdm-ingest dev",
+    "dev:projector": "pnpm --filter @zawa/projector dev",
+    "dev:rdm-sync": "pnpm --filter @zawa/rdm-sync dev",
+    "e2e:trigger:reference": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=17%202%20*%20*%20*\"",
+    "e2e:trigger:station-profiles": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=43%20*%20*%20*%20*\"",
+    "e2e:trigger:operator-statuses": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=1%2C6%2C11%2C16%2C21%2C26%2C31%2C36%2C41%2C46%2C51%2C56%20*%20*%20*%20*\"",
+    "e2e:trigger:incidents": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=4%2C9%2C14%2C19%2C24%2C29%2C34%2C39%2C44%2C49%2C54%2C59%20*%20*%20*%20*\"",
+    "e2e:trigger:station-disruptions": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=7%2C22%2C37%2C52%20*%20*%20*%20*\"",
+    "e2e:trigger:boards": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=*/5%20*%20*%20*%20*\"",
+    "e2e:trigger:ontology-quality": "curl -fsS \"http://localhost:8789/cdn-cgi/handler/scheduled?cron=13%20*%20*%20*%20*\"",
+    "e2e:trigger:scheduled": "pnpm e2e:trigger:reference && pnpm e2e:trigger:station-profiles && pnpm e2e:trigger:operator-statuses && pnpm e2e:trigger:incidents && pnpm e2e:trigger:station-disruptions && pnpm e2e:trigger:boards && pnpm e2e:trigger:ontology-quality",
+    "e2e:trigger:service-detail": "node scripts/trigger-local-service-detail.mjs",
+    "e2e:verify:local": "node scripts/verify-local-e2e.mjs",
+    "e2e:verify:local:streaming": "E2E_VERIFY_STREAMING=1 node scripts/verify-local-e2e.mjs",
+    "deploy": "pnpm -r run deploy"
+  },
+  "devDependencies": {
+    "vite-plus": "catalog:"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@10.33.0"
+}

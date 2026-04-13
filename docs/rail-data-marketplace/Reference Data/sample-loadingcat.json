@@ -1,0 +1,33 @@
+{
+  "version": "2022-07-13 12:00",
+  "CategoryList": [
+    {
+      "data": [
+        {
+          "typicalDescription": "Usually only a few seats taken",
+          "expectedDescription": "Only a few seats taken",
+          "definition": "Everyone will be able to find a seat",
+          "colour": "",
+          "image": "",
+          "toc": ""
+        }
+      ],
+      "code": "A",
+      "name": "Few seats taken"
+    },
+    {
+      "data": [
+        {
+          "typicalDescription": "Usually plenty of seats available",
+          "expectedDescription": "Plenty of seats available",
+          "definition": "Every will be able to find a seat - groups should still be able to sit together",
+          "colour": "",
+          "image": "",
+          "toc": ""
+        }
+      ],
+      "code": "B",
+      "name": "Plenty of seats"
+    }
+  ]
+}
