@@ -68,7 +68,12 @@ export async function searchOntology(
   );
   const results = branchResults
     .flat()
-    .sort((left, right) => right.score - left.score || compareSearchText(left, right));
+    .sort(
+      (left, right) =>
+        compareStationPriority(left, right) ||
+        right.score - left.score ||
+        compareSearchText(left, right),
+    );
 
   return {
     query,
@@ -97,19 +102,6 @@ async function searchBranchResults(
 
 function searchBranches(query: string): SearchBranch[] {
   return [
-    stationBranch(query),
-    serviceBranch(query),
-    operatorBranch(query),
-    networkIncidentBranch(query),
-    operatorDisruptionBranch(query),
-    stationDisruptionBranch(query),
-    stationMessageBranch(query),
-    serviceFormationBranch(query),
-    loadingCategoryBranch(query),
-    reasonCodeBranch(query),
-    sourceInstanceBranch(query),
-    trainRunBranch(query),
-    trainMovementBranch(query),
     classBranch(query),
     propertyBranch(query),
     thingBranch(query),
@@ -118,449 +110,6 @@ function searchBranches(query: string): SearchBranch[] {
     classAssertionBranch(query),
     tripleBranch(query),
   ];
-}
-
-function stationBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'station:' || station_profiles.station_key AS result_id,
-        'station' AS result_kind,
-        station_profiles.station_thing_id AS thing_id,
-        'rail:Station' AS thing_type,
-        station_profiles.station_name AS title,
-        station_profiles.station_key AS subtitle,
-        'station' AS match_label,
-        station_profiles.station_key || ' ' || station_profiles.station_name AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        station_profiles.station_key,
-        NULL AS service_key,
-        CASE
-          WHEN UPPER(station_profiles.station_key) = UPPER(?) THEN 1000
-          WHEN INSTR(LOWER(station_profiles.station_key), LOWER(?)) = 1 THEN 940
-          WHEN INSTR(LOWER(station_profiles.station_name), LOWER(?)) = 1 THEN 900
-          ELSE 780
-        END AS score,
-        station_profiles.updated_at
-      FROM station_profiles
-      WHERE station_profiles.is_active = 1
-        AND (
-          INSTR(LOWER(station_profiles.station_key), LOWER(?)) > 0
-          OR INSTR(LOWER(station_profiles.station_name), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(station_profiles.postcode, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(station_profiles.station_operator, '')), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query, query, query, query, query, query],
-  };
-}
-
-function serviceBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'service:' || service_journeys.service_key AS result_id,
-        'service' AS result_kind,
-        service_journeys.service_thing_id AS thing_id,
-        'rail:ServiceJourney' AS thing_type,
-        COALESCE(
-          service_journeys.origin_name || ' to ' || service_journeys.destination_name,
-          service_journeys.service_key
-        ) AS title,
-        service_journeys.service_key AS subtitle,
-        'service' AS match_label,
-        service_journeys.service_key || ' ' ||
-          COALESCE(service_journeys.rid, '') || ' ' ||
-          COALESCE(service_journeys.uid, '') || ' ' ||
-          COALESCE(service_journeys.train_id, '') || ' ' ||
-          COALESCE(service_journeys.origin_name, '') || ' ' ||
-          COALESCE(service_journeys.destination_name, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        service_journeys.service_key,
-        CASE
-          WHEN service_journeys.service_key = ? THEN 960
-          WHEN INSTR(LOWER(service_journeys.service_key), LOWER(?)) = 1 THEN 880
-          ELSE 720
-        END AS score,
-        service_journeys.updated_at
-      FROM service_journeys
-      WHERE INSTR(LOWER(service_journeys.service_key), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_journeys.rid, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_journeys.uid, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_journeys.train_id, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_journeys.origin_name, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_journeys.destination_name, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_journeys.status, '')), LOWER(?)) > 0
-    `,
-    values: [query, query, query, query, query, query, query, query, query],
-  };
-}
-
-function operatorBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'operator:' || operators.toc_code AS result_id,
-        'operator' AS result_kind,
-        operators.operator_thing_id AS thing_id,
-        'rail:Operator' AS thing_type,
-        operators.toc_name AS title,
-        operators.toc_code AS subtitle,
-        'operator' AS match_label,
-        operators.toc_code || ' ' || operators.toc_name AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        CASE
-          WHEN UPPER(operators.toc_code) = UPPER(?) THEN 930
-          WHEN INSTR(LOWER(operators.toc_name), LOWER(?)) = 1 THEN 850
-          ELSE 680
-        END AS score,
-        operators.updated_at
-      FROM operators
-      WHERE operators.is_active = 1
-        AND (
-          INSTR(LOWER(operators.toc_code), LOWER(?)) > 0
-          OR INSTR(LOWER(operators.toc_name), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query, query, query],
-  };
-}
-
-function networkIncidentBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'incident:' || network_incidents.incident_id AS result_id,
-        'incident' AS result_kind,
-        network_incidents.incident_thing_id AS thing_id,
-        'rail:NetworkIncident' AS thing_type,
-        COALESCE(network_incidents.summary, network_incidents.incident_id) AS title,
-        'Network incident' AS subtitle,
-        'incident' AS match_label,
-        COALESCE(network_incidents.summary, '') || ' ' ||
-          COALESCE(network_incidents.description_html, '') || ' ' ||
-          COALESCE(network_incidents.routes_affected_html, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        650 AS score,
-        network_incidents.updated_at
-      FROM network_incidents
-      WHERE network_incidents.is_active = 1
-        AND (
-          INSTR(LOWER(network_incidents.incident_id), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(network_incidents.summary, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(network_incidents.description_html, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(network_incidents.routes_affected_html, '')), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query, query, query],
-  };
-}
-
-function operatorDisruptionBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'operator-disruption:' || operator_disruptions.toc_code || ':' || operator_disruptions.disruption_id AS result_id,
-        'operator_disruption' AS result_kind,
-        operator_disruptions.disruption_thing_id AS thing_id,
-        'rail:OperatorDisruption' AS thing_type,
-        COALESCE(operator_disruptions.detail, operator_disruptions.disruption_id) AS title,
-        operator_disruptions.toc_code AS subtitle,
-        'operator disruption' AS match_label,
-        operator_disruptions.disruption_id || ' ' || COALESCE(operator_disruptions.detail, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        620 AS score,
-        operator_disruptions.updated_at
-      FROM operator_disruptions
-      WHERE INSTR(LOWER(operator_disruptions.disruption_id), LOWER(?)) > 0
-        OR INSTR(LOWER(operator_disruptions.toc_code), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(operator_disruptions.detail, '')), LOWER(?)) > 0
-    `,
-    values: [query, query, query],
-  };
-}
-
-function stationDisruptionBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'station-disruption:' || station_disruptions.station_key || ':' || station_disruptions.disruption_id AS result_id,
-        'station_disruption' AS result_kind,
-        station_disruptions.disruption_thing_id AS thing_id,
-        'rail:StationDisruption' AS thing_type,
-        COALESCE(station_disruptions.description, station_disruptions.disruption_id) AS title,
-        station_disruptions.station_key AS subtitle,
-        'station disruption' AS match_label,
-        station_disruptions.disruption_id || ' ' ||
-          COALESCE(station_disruptions.category, '') || ' ' ||
-          COALESCE(station_disruptions.severity, '') || ' ' ||
-          COALESCE(station_disruptions.description, '') || ' ' ||
-          COALESCE(station_disruptions.message_html, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        station_disruptions.station_key,
-        NULL AS service_key,
-        640 AS score,
-        station_disruptions.updated_at
-      FROM station_disruptions
-      WHERE station_disruptions.is_active = 1
-        AND (
-          INSTR(LOWER(station_disruptions.station_key), LOWER(?)) > 0
-          OR INSTR(LOWER(station_disruptions.disruption_id), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(station_disruptions.category, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(station_disruptions.severity, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(station_disruptions.description, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(station_disruptions.message_html, '')), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query, query, query, query, query],
-  };
-}
-
-function stationMessageBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'station-message:' || station_messages.station_key || ':' || station_messages.message_hash AS result_id,
-        'station_message' AS result_kind,
-        station_messages.message_thing_id AS thing_id,
-        'rail:StationMessage' AS thing_type,
-        COALESCE(station_messages.category, station_messages.message_hash) AS title,
-        station_messages.station_key AS subtitle,
-        'station message' AS match_label,
-        station_messages.message_hash || ' ' ||
-          COALESCE(station_messages.category, '') || ' ' ||
-          COALESCE(station_messages.severity, '') || ' ' ||
-          station_messages.message_html AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        station_messages.station_key,
-        NULL AS service_key,
-        630 AS score,
-        station_messages.updated_at
-      FROM station_messages
-      WHERE INSTR(LOWER(station_messages.station_key), LOWER(?)) > 0
-        OR INSTR(LOWER(station_messages.message_hash), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(station_messages.category, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(station_messages.severity, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(station_messages.message_html), LOWER(?)) > 0
-    `,
-    values: [query, query, query, query, query],
-  };
-}
-
-function serviceFormationBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'formation:' || service_formations.service_key || ':' || service_formations.formation_index AS result_id,
-        'service_formation' AS result_kind,
-        service_formations.formation_thing_id AS thing_id,
-        'rail:ServiceFormation' AS thing_type,
-        COALESCE(service_formations.loading_category_name, 'Service formation') AS title,
-        service_formations.service_key AS subtitle,
-        'formation' AS match_label,
-        service_formations.service_key || ' ' ||
-          COALESCE(service_formations.tiploc, '') || ' ' ||
-          COALESCE(service_formations.loading_category_code, '') || ' ' ||
-          COALESCE(service_formations.loading_category_name, '') || ' ' ||
-          COALESCE(service_formations.source, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        service_formations.service_key,
-        600 AS score,
-        service_formations.updated_at
-      FROM service_formations
-      WHERE INSTR(LOWER(service_formations.service_key), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_formations.tiploc, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_formations.loading_category_code, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_formations.loading_category_name, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(service_formations.source, '')), LOWER(?)) > 0
-    `,
-    values: [query, query, query, query, query],
-  };
-}
-
-function loadingCategoryBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'loading-category:' || loading_categories.category_code AS result_id,
-        'loading_category' AS result_kind,
-        loading_categories.loading_category_thing_id AS thing_id,
-        'rail:LoadingCategory' AS thing_type,
-        COALESCE(loading_categories.category_name, loading_categories.category_code) AS title,
-        loading_categories.category_code AS subtitle,
-        'loading category' AS match_label,
-        loading_categories.category_code || ' ' ||
-          COALESCE(loading_categories.category_name, '') || ' ' ||
-          COALESCE(loading_categories.typical_description, '') || ' ' ||
-          COALESCE(loading_categories.expected_description, '') || ' ' ||
-          COALESCE(loading_categories.definition, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        610 AS score,
-        loading_categories.updated_at
-      FROM loading_categories
-      WHERE loading_categories.is_active = 1
-        AND (
-          INSTR(LOWER(loading_categories.category_code), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(loading_categories.category_name, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(loading_categories.typical_description, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(loading_categories.expected_description, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(loading_categories.definition, '')), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query, query, query, query],
-  };
-}
-
-function reasonCodeBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'reason-code:' || reason_codes.reason_code AS result_id,
-        'reason_code' AS result_kind,
-        reason_codes.reason_thing_id AS thing_id,
-        'rail:ReasonCode' AS thing_type,
-        COALESCE(reason_codes.late_reason, reason_codes.cancellation_reason, reason_codes.reason_code) AS title,
-        reason_codes.reason_code AS subtitle,
-        'reason code' AS match_label,
-        reason_codes.reason_code || ' ' ||
-          COALESCE(reason_codes.late_reason, '') || ' ' ||
-          COALESCE(reason_codes.cancellation_reason, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        610 AS score,
-        reason_codes.updated_at
-      FROM reason_codes
-      WHERE reason_codes.is_active = 1
-        AND (
-          INSTR(LOWER(reason_codes.reason_code), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(reason_codes.late_reason, '')), LOWER(?)) > 0
-          OR INSTR(LOWER(COALESCE(reason_codes.cancellation_reason, '')), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query, query],
-  };
-}
-
-function sourceInstanceBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'source-instance:' || source_instances.source_instance_id AS result_id,
-        'source_instance' AS result_kind,
-        source_instances.source_instance_thing_id AS thing_id,
-        'rail:SourceInstance' AS thing_type,
-        source_instances.source_instance_name AS title,
-        source_instances.source_instance_id AS subtitle,
-        'source instance' AS match_label,
-        source_instances.source_instance_id || ' ' || source_instances.source_instance_name AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        590 AS score,
-        source_instances.updated_at
-      FROM source_instances
-      WHERE source_instances.is_active = 1
-        AND (
-          INSTR(LOWER(source_instances.source_instance_id), LOWER(?)) > 0
-          OR INSTR(LOWER(source_instances.source_instance_name), LOWER(?)) > 0
-        )
-    `,
-    values: [query, query],
-  };
-}
-
-function trainRunBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'train-run:' || train_movements.train_run_key AS result_id,
-        'train_run' AS result_kind,
-        train_movements.train_run_thing_id AS thing_id,
-        'rail:TrainRun' AS thing_type,
-        train_movements.train_run_key AS title,
-        MAX(COALESCE(train_movements.service_key, train_movements.train_id, train_movements.train_uid)) AS subtitle,
-        'train run' AS match_label,
-        train_movements.train_run_key || ' ' ||
-          COALESCE(train_movements.train_id, '') || ' ' ||
-          COALESCE(train_movements.train_uid, '') || ' ' ||
-          COALESCE(train_movements.toc, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        MAX(train_movements.service_key) AS service_key,
-        580 AS score,
-        MAX(train_movements.updated_at) AS updated_at
-      FROM train_movements
-      WHERE INSTR(LOWER(train_movements.train_run_key), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.train_id, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.train_uid, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.toc, '')), LOWER(?)) > 0
-      GROUP BY train_movements.train_run_key, train_movements.train_run_thing_id
-    `,
-    values: [query, query, query, query],
-  };
-}
-
-function trainMovementBranch(query: string): SearchBranch {
-  return {
-    sql: `
-      SELECT
-        'train-movement:' || train_movements.train_run_key || ':' || train_movements.movement_index AS result_id,
-        'train_movement' AS result_kind,
-        train_movements.movement_thing_id AS thing_id,
-        'rail:TrainMovement' AS thing_type,
-        COALESCE(train_movements.event_type, train_movements.planned_event_type, 'Train movement') AS title,
-        train_movements.train_run_key AS subtitle,
-        'train movement' AS match_label,
-        train_movements.train_run_key || ' ' ||
-          COALESCE(train_movements.train_id, '') || ' ' ||
-          COALESCE(train_movements.train_uid, '') || ' ' ||
-          COALESCE(train_movements.toc, '') || ' ' ||
-          COALESCE(train_movements.stanox, '') || ' ' ||
-          COALESCE(train_movements.reporting_stanox, '') || ' ' ||
-          COALESCE(train_movements.platform, '') || ' ' ||
-          COALESCE(train_movements.event_type, '') AS match_value,
-        NULL AS predicate_id,
-        NULL AS predicate_label,
-        NULL AS station_key,
-        train_movements.service_key,
-        570 AS score,
-        train_movements.updated_at
-      FROM train_movements
-      WHERE INSTR(LOWER(train_movements.train_run_key), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.train_id, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.train_uid, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.toc, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.stanox, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.reporting_stanox, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.platform, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.event_type, '')), LOWER(?)) > 0
-        OR INSTR(LOWER(COALESCE(train_movements.planned_event_type, '')), LOWER(?)) > 0
-    `,
-    values: [query, query, query, query, query, query, query, query, query],
-  };
 }
 
 function classBranch(query: string): SearchBranch {
@@ -643,9 +192,13 @@ function thingBranch(query: string): SearchBranch {
           COALESCE(things.disambiguation_hint, '') AS match_value,
         NULL AS predicate_id,
         NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
+        ${stationKeySql("things.thing_id", "things.thing_type")} AS station_key,
+        ${serviceKeySql("things.thing_id", "things.thing_type")} AS service_key,
         CASE
+          WHEN things.thing_type = 'rail:Station' AND things.thing_id = ? THEN 1040
+          WHEN things.thing_type = 'rail:Station'
+            AND INSTR(LOWER(COALESCE(things.preferred_label, '')), LOWER(?)) = 1 THEN 1000
+          WHEN things.thing_type = 'rail:Station' THEN 900
           WHEN things.thing_id = ? THEN 740
           WHEN INSTR(LOWER(COALESCE(things.preferred_label, '')), LOWER(?)) = 1 THEN 660
           ELSE 500
@@ -660,7 +213,7 @@ function thingBranch(query: string): SearchBranch {
           OR INSTR(LOWER(COALESCE(things.disambiguation_hint, '')), LOWER(?)) > 0
         )
     `,
-    values: [query, query, query, query, query, query],
+    values: [query, query, query, query, query, query, query, query],
   };
 }
 
@@ -678,9 +231,16 @@ function identifierBranch(query: string): SearchBranch {
         identifiers.identifier_value AS match_value,
         NULL AS predicate_id,
         NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
+        ${stationKeySql("things.thing_id", "things.thing_type")} AS station_key,
+        ${serviceKeySql("things.thing_id", "things.thing_type")} AS service_key,
         CASE
+          WHEN things.thing_type = 'rail:Station'
+            AND identifiers.identifier_scheme = 'rail:crs'
+            AND UPPER(identifiers.identifier_value) = UPPER(?) THEN 1100
+          WHEN things.thing_type = 'rail:Station'
+            AND identifiers.identifier_scheme = 'rail:crs'
+            AND INSTR(LOWER(identifiers.identifier_value), LOWER(?)) = 1 THEN 1060
+          WHEN things.thing_type = 'rail:Station' THEN 900
           WHEN identifiers.identifier_value = ? THEN 860
           WHEN INSTR(LOWER(identifiers.identifier_value), LOWER(?)) = 1 THEN 790
           ELSE 620
@@ -694,7 +254,7 @@ function identifierBranch(query: string): SearchBranch {
           OR INSTR(LOWER(identifiers.identifier_value), LOWER(?)) > 0
         )
     `,
-    values: [query, query, query, query],
+    values: [query, query, query, query, query, query],
   };
 }
 
@@ -712,9 +272,13 @@ function labelBranch(query: string): SearchBranch {
         labels.label AS match_value,
         NULL AS predicate_id,
         NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
+        ${stationKeySql("things.thing_id", "things.thing_type")} AS station_key,
+        ${serviceKeySql("things.thing_id", "things.thing_type")} AS service_key,
         CASE
+          WHEN things.thing_type = 'rail:Station' AND LOWER(labels.label) = LOWER(?) THEN 1080
+          WHEN things.thing_type = 'rail:Station'
+            AND INSTR(LOWER(labels.label), LOWER(?)) = 1 THEN 1020
+          WHEN things.thing_type = 'rail:Station' THEN 900
           WHEN LOWER(labels.label) = LOWER(?) THEN 800
           WHEN INSTR(LOWER(labels.label), LOWER(?)) = 1 THEN 720
           ELSE 590
@@ -725,7 +289,7 @@ function labelBranch(query: string): SearchBranch {
       WHERE things.is_active = 1
         AND INSTR(LOWER(labels.label), LOWER(?)) > 0
     `,
-    values: [query, query, query],
+    values: [query, query, query, query, query],
   };
 }
 
@@ -743,9 +307,12 @@ function classAssertionBranch(query: string): SearchBranch {
         assertions.class_id || ' ' || COALESCE(classes.label, '') AS match_value,
         NULL AS predicate_id,
         NULL AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
-        560 AS score,
+        ${stationKeySql("things.thing_id", "things.thing_type")} AS station_key,
+        ${serviceKeySql("things.thing_id", "things.thing_type")} AS service_key,
+        CASE
+          WHEN things.thing_type = 'rail:Station' THEN 900
+          ELSE 560
+        END AS score,
         things.updated_at
       FROM thing_class_assertions assertions
       INNER JOIN things ON things.thing_id = assertions.thing_id
@@ -774,9 +341,10 @@ function tripleBranch(query: string): SearchBranch {
         COALESCE(object_things.preferred_label, triples.object_thing_id, triples.object_literal) AS match_value,
         triples.predicate_id,
         properties.label AS predicate_label,
-        NULL AS station_key,
-        NULL AS service_key,
+        ${stationKeySql("subject_things.thing_id", "subject_things.thing_type")} AS station_key,
+        ${serviceKeySql("subject_things.thing_id", "subject_things.thing_type")} AS service_key,
         CASE
+          WHEN subject_things.thing_type = 'rail:Station' THEN 900
           WHEN triples.predicate_id = ? THEN 700
           WHEN LOWER(COALESCE(properties.label, '')) = LOWER(?) THEN 680
           ELSE 540
@@ -821,6 +389,38 @@ function thingKindSql(thingTypeExpression: string): string {
   `;
 }
 
+function stationKeySql(thingIdExpression: string, thingTypeExpression: string): string {
+  return `
+    CASE
+      WHEN ${thingTypeExpression} = 'rail:Station' THEN (
+        SELECT station_identifiers.identifier_value
+        FROM thing_identifiers station_identifiers
+        WHERE station_identifiers.thing_id = ${thingIdExpression}
+          AND station_identifiers.identifier_scheme = 'rail:crs'
+        ORDER BY station_identifiers.is_primary DESC, station_identifiers.identifier_value ASC
+        LIMIT 1
+      )
+      ELSE NULL
+    END
+  `;
+}
+
+function serviceKeySql(thingIdExpression: string, thingTypeExpression: string): string {
+  return `
+    CASE
+      WHEN ${thingTypeExpression} = 'rail:ServiceJourney' THEN (
+        SELECT service_identifiers.identifier_value
+        FROM thing_identifiers service_identifiers
+        WHERE service_identifiers.thing_id = ${thingIdExpression}
+          AND service_identifiers.identifier_scheme = 'rail:service-key'
+        ORDER BY service_identifiers.is_primary DESC, service_identifiers.identifier_value ASC
+        LIMIT 1
+      )
+      ELSE NULL
+    END
+  `;
+}
+
 function searchLimit(limit: number | undefined): number {
   if (!Number.isFinite(limit)) return DEFAULT_SEARCH_LIMIT;
   return Math.min(Math.max(Math.trunc(limit ?? DEFAULT_SEARCH_LIMIT), 1), MAX_SEARCH_LIMIT);
@@ -831,6 +431,13 @@ function compareSearchText(left: OntologySearchResult, right: OntologySearchResu
     left.title.localeCompare(right.title, "en-GB") ||
     left.result_id.localeCompare(right.result_id, "en-GB")
   );
+}
+
+function compareStationPriority(left: OntologySearchResult, right: OntologySearchResult): number {
+  if (left.result_kind === right.result_kind) return 0;
+  if (left.result_kind === "station") return -1;
+  if (right.result_kind === "station") return 1;
+  return 0;
 }
 
 function dedupeSearchResults(results: OntologySearchResult[]): OntologySearchResult[] {
