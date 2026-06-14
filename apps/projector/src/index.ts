@@ -282,6 +282,13 @@ async function projectStationBoardRefreshEvent(
   const snapshotEvent = await stationBoardProjectionEvent(board, event.ingestedAt);
   if (!(await claimProcessedEvent(env.DB, snapshotEvent.id, event.ingestedAt))) {
     stats.duplicates += 1;
+    await markStationBoardRefreshed(
+      env.DB,
+      stationKey,
+      boardType,
+      event.ingestedAt,
+      board.rows.length,
+    );
     return stats;
   }
 
