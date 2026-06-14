@@ -44,12 +44,12 @@
       {
         "class_name": "StationBoardDO",
         "name": "STATION_BOARD_DO",
-        "script_name": "zawa-edge"
+        "script_name": "live-rail-info-edge"
       },
       {
         "class_name": "ServiceDO",
         "name": "SERVICE_DO",
-        "script_name": "zawa-edge"
+        "script_name": "live-rail-info-edge"
       }
     ]
   }
