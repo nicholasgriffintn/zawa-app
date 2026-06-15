@@ -1,8 +1,6 @@
 import type { D1DatabaseLike } from "@zawa/db/d1";
 
-import { evaluateRdmConfig, type RdmRuntimeEnv } from "../lib/rdm-config";
-
-interface HealthRoutesEnv extends RdmRuntimeEnv {
+interface HealthRoutesEnv {
   DB: D1DatabaseLike;
   INGEST_HEARTBEAT_SECONDS: string;
 }
@@ -41,28 +39,21 @@ export async function handleHealthRoutes(
 
   const heartbeatSeconds = Number(env.INGEST_HEARTBEAT_SECONDS) || 30;
   const staleAfterMs = Math.max(heartbeatSeconds * 3 * 1_000, 90_000);
-  const rdmConfig = evaluateRdmConfig(env);
   const feedRows = rows.results;
   const scheduledFeed = currentScheduledFeed(feedRows);
   const streamingFeeds = STREAMING_FEED_NAMES.map((feedName) =>
     feedHealth(feedRows.find((row) => row.feed_name === feedName) ?? null, staleAfterMs),
   );
   const scheduled = feedHealth(scheduledFeed, staleAfterMs);
-  const ok = Boolean(scheduled.ok && streamingFeeds.every((feed) => feed.ok) && rdmConfig.ok);
 
-  return Response.json(
-    {
-      ok,
-      feed: scheduled.row,
-      feeds: {
-        scheduled,
-        streaming: streamingFeeds,
-      },
-      rdmConfig,
-      staleAfterSeconds: staleAfterMs / 1_000,
+  return Response.json({
+    feed: scheduled.row,
+    feeds: {
+      scheduled,
+      streaming: streamingFeeds,
     },
-    { status: ok ? 200 : 503 },
-  );
+    staleAfterSeconds: staleAfterMs / 1_000,
+  });
 }
 
 function currentScheduledFeed(rows: FeedHealthRow[]): FeedHealthRow | null {
