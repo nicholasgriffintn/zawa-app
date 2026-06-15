@@ -1,10 +1,15 @@
 import { DurableObject } from "cloudflare:workers";
+import { stationBoardProjectionEvent } from "@zawa/rdm/projection-events";
+import { getRdmStationBoard } from "@zawa/rdm/services";
 import { parseStationBoardMessage } from "@zawa/realtime/messages";
+import type { StationBoardMessage } from "@zawa/realtime/messages";
 import { decodePathSegment } from "@zawa/shared/http";
+import { nowIso } from "@zawa/shared/time";
 
-import { withStationBoardOntology } from "../lib/ontology";
-import { getStationBoardSnapshot } from "../lib/snapshots";
+import { currentStationBoard } from "../lib/board-window";
 import type { Env } from "../types/env";
+
+const LIVE_BOARD_LIMIT = 50;
 
 export class StationBoardDO extends DurableObject<Env> {
   private sessions = new Set<WebSocket>();
@@ -55,24 +60,37 @@ export class StationBoardDO extends DurableObject<Env> {
     if (!stationKey) return;
 
     const boardType = url.searchParams.get("boardType") === "arrivals" ? "arrivals" : "departures";
-    const snapshot = await withStationBoardOntology(
-      this.env.DB,
-      await getStationBoardSnapshot(this.env.DB, stationKey, boardType),
-    );
+    const liveBoard = await getRdmStationBoard(this.env, stationKey, boardType, {
+      limit: LIVE_BOARD_LIMIT,
+      cursor: null,
+    });
+    const currentBoard = currentStationBoard(liveBoard, nowIso());
+    const message: StationBoardMessage = {
+      type: "station.board.snapshot",
+      stationKey,
+      boardType,
+      rows: currentBoard.rows,
+      previousCursor: currentBoard.previousCursor,
+      nextCursor: currentBoard.nextCursor,
+      sentAt: new Date().toISOString(),
+    };
+    await this.broadcast(message);
+    this.ctx.waitUntil(this.queueBoardProjection(currentBoard));
+  }
+
+  private async queueBoardProjection(
+    board: Awaited<ReturnType<typeof getRdmStationBoard>>,
+  ): Promise<void> {
     try {
-      ws.send(
+      const event = await stationBoardProjectionEvent(board, new Date().toISOString());
+      await this.env.RAIL_EVENTS_QUEUE.send(event);
+    } catch (error) {
+      console.error(
         JSON.stringify({
-          type: "station.board.snapshot",
-          stationKey,
-          boardType,
-          rows: snapshot.rows,
-          nextCursor: snapshot.nextCursor,
-          ontology: snapshot.ontology,
-          sentAt: new Date().toISOString(),
+          event: "station_board_do.projection_queue_failed",
+          message: error instanceof Error ? error.message : String(error),
         }),
       );
-    } catch {
-      this.sessions.delete(ws);
     }
   }
 }

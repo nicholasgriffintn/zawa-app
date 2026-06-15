@@ -1,16 +1,27 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { StationBoardResponse } from "@zawa/domain/api";
 
-import { type BoardType, getStationBoard } from "../lib/api";
 import {
-  currentBoardRows,
-  mergeBoardRows,
-  mergeCurrentBoardRows,
-  upsertCurrentBoardRow,
-} from "../lib/board-rows";
+  type BoardType,
+  type StationContextResponse,
+  getStationBoard,
+  getStationContext,
+} from "../lib/api";
+import { currentBoardRows, mergeBoardRows, upsertCurrentBoardRow } from "../lib/board-rows";
 import { connectStationBoard } from "../lib/ws";
 
 type BoardRows = StationBoardResponse["rows"];
+const stationContextRequests = new Map<string, Promise<StationContextResponse>>();
+
+interface BoardCache {
+  rows: BoardRows;
+  previousCursor: string | null;
+  nextCursor: string | null;
+  loading: boolean;
+  loaded: boolean;
+  error: string | null;
+  lastReceivedAt: string | null;
+}
 
 export interface StationBoardState {
   stationName: string | null;
@@ -32,194 +43,266 @@ export interface StationBoardState {
 }
 
 export function useStationBoard(stationKey: string, boardType: BoardType): StationBoardState {
-  const boardKey = `${stationKey}:${boardType}`;
-  const [rows, setRows] = useState<BoardRows>([]);
+  const [boards, setBoards] = useState<Record<BoardType, BoardCache>>(createEmptyBoards);
   const [stationName, setStationName] = useState<string | null>(null);
   const [profile, setProfile] = useState<StationBoardResponse["profile"]>(null);
   const [notices, setNotices] = useState<StationBoardResponse["notices"]>([]);
   const [incidents, setIncidents] = useState<StationBoardResponse["incidents"]>([]);
   const [ontology, setOntology] = useState<StationBoardResponse["ontology"]>(undefined);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [contextError, setContextError] = useState<string | null>(null);
   const [connected, setConnected] = useState(false);
-  const [previousCursor, setPreviousCursor] = useState<string | null>(null);
-  const [nextCursor, setNextCursor] = useState<string | null>(null);
   const [loadingEarlier, setLoadingEarlier] = useState(false);
   const [loadingLater, setLoadingLater] = useState(false);
-  const [loadedBoardKey, setLoadedBoardKey] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    setBoards(createEmptyBoards());
+    setStationName(null);
+    setProfile(null);
+    setNotices([]);
+    setIncidents([]);
+    setOntology(undefined);
+    setContextError(null);
+
+    void cachedStationContext(stationKey)
+      .then((context) => {
+        if (cancelled) return;
+        setStationName(context.stationName);
+        setProfile(context.profile);
+        setNotices(context.notices);
+        setIncidents(context.incidents);
+        setOntology(context.ontology);
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        setContextError(err instanceof Error ? err.message : "Failed to load station context");
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [stationKey]);
 
   useEffect(() => {
     let ws: WebSocket | undefined;
     let reconnectTimer: ReturnType<typeof setTimeout> | undefined;
     let cancelled = false;
+    let receivedSnapshot = false;
 
     const openSocket = () => {
+      setBoards((current) => ({
+        ...current,
+        [boardType]: {
+          ...current[boardType],
+          loading: !current[boardType].loaded,
+          error: null,
+        },
+      }));
+
       ws = connectStationBoard(
         stationKey,
         boardType,
         (msg) => {
-          if (msg.boardType !== boardType) return;
+          if (cancelled || msg.stationKey !== stationKey || msg.boardType !== boardType) return;
 
           if (msg.type === "station.board.snapshot") {
-            setRows((current) =>
-              mergeCurrentBoardRows(current, msg.rows, new Date().toISOString()),
-            );
-            setNextCursor(msg.nextCursor);
-            setOntology(msg.ontology);
+            receivedSnapshot = true;
+            setBoards((current) => ({
+              ...current,
+              [boardType]: {
+                rows: currentBoardRows(msg.rows, new Date().toISOString()),
+                previousCursor: msg.previousCursor,
+                nextCursor: msg.nextCursor,
+                loading: false,
+                loaded: true,
+                error: null,
+                lastReceivedAt: msg.sentAt,
+              },
+            }));
             return;
           }
 
           if (msg.type === "station.board.remove") {
-            setRows((current) => current.filter((row) => row.service_key !== msg.serviceKey));
+            setBoards((current) => ({
+              ...current,
+              [boardType]: {
+                ...current[boardType],
+                rows: current[boardType].rows.filter((row) => row.service_key !== msg.serviceKey),
+                lastReceivedAt: msg.sentAt,
+              },
+            }));
             return;
           }
 
-          setRows((current) =>
-            upsertCurrentBoardRow(current, stationKey, boardType, msg, new Date().toISOString()),
-          );
+          setBoards((current) => ({
+            ...current,
+            [boardType]: {
+              ...current[boardType],
+              rows: upsertCurrentBoardRow(
+                current[boardType].rows,
+                stationKey,
+                boardType,
+                msg,
+                new Date().toISOString(),
+              ),
+              lastReceivedAt: msg.sentAt,
+            },
+          }));
         },
         (isConnected) => {
+          if (cancelled) return;
+
           setConnected(isConnected);
-          if (!isConnected && !cancelled) {
+          if (!isConnected) {
+            if (!receivedSnapshot) {
+              setBoards((current) => ({
+                ...current,
+                [boardType]: {
+                  ...current[boardType],
+                  loading: false,
+                  error: "Live station board updates are unavailable right now",
+                },
+              }));
+            }
             reconnectTimer = setTimeout(openSocket, 2_500);
           }
         },
       );
     };
 
-    setLoading(true);
-    setError(null);
     setConnected(false);
-    setPreviousCursor(null);
-    setNextCursor(null);
     setLoadingEarlier(false);
     setLoadingLater(false);
-    setStationName(null);
-    setProfile(null);
-    setNotices([]);
-    setIncidents([]);
-    setOntology(undefined);
-    setLoadedBoardKey(null);
-
-    void (async () => {
-      try {
-        const data = await getStationBoard(stationKey, boardType);
-        if (cancelled) return;
-
-        setStationName(data.stationName);
-        setProfile(data.profile);
-        setNotices(data.notices);
-        setIncidents(data.incidents);
-        setOntology(data.ontology);
-        setRows(currentBoardRows(data.rows, new Date().toISOString()));
-        setPreviousCursor(data.previousCursor);
-        setNextCursor(data.nextCursor);
-        setLoadedBoardKey(boardKey);
-        setLoading(false);
-        openSocket();
-      } catch (err) {
-        if (cancelled) return;
-
-        setError(err instanceof Error ? err.message : "Failed to load station board");
-        setStationName(null);
-        setProfile(null);
-        setNotices([]);
-        setIncidents([]);
-        setOntology(undefined);
-        setRows([]);
-        setPreviousCursor(null);
-        setNextCursor(null);
-        setLoadedBoardKey(null);
-        setLoading(false);
-      }
-    })();
+    openSocket();
 
     return () => {
       cancelled = true;
       if (reconnectTimer) clearTimeout(reconnectTimer);
       ws?.close();
     };
-  }, [boardKey, stationKey, boardType]);
+  }, [stationKey, boardType]);
+
+  const activeBoard = boards[boardType];
 
   const loadEarlier = useCallback(() => {
-    if (!previousCursor || loadingEarlier) return;
+    if (!activeBoard.previousCursor || loadingEarlier) return;
 
     setLoadingEarlier(true);
-    setError(null);
 
-    void getStationBoard(stationKey, boardType, { cursor: previousCursor })
+    void getStationBoard(stationKey, boardType, { cursor: activeBoard.previousCursor })
       .then((data) => {
-        setRows((current) => mergeBoardRows(current, data.rows));
-        setStationName((current) => current ?? data.stationName);
-        setProfile((current) => current ?? data.profile);
-        setNotices(data.notices);
-        setIncidents(data.incidents);
-        setOntology(data.ontology);
-        setPreviousCursor(data.previousCursor);
+        setBoards((current) => ({
+          ...current,
+          [boardType]: {
+            ...current[boardType],
+            rows: mergeBoardRows(current[boardType].rows, data.rows),
+            previousCursor: data.previousCursor,
+            error: null,
+            lastReceivedAt: new Date().toISOString(),
+          },
+        }));
       })
       .catch((err) => {
-        setError(err instanceof Error ? err.message : "Failed to load earlier services");
+        setBoards((current) => ({
+          ...current,
+          [boardType]: {
+            ...current[boardType],
+            error: err instanceof Error ? err.message : "Failed to load earlier services",
+          },
+        }));
       })
       .finally(() => setLoadingEarlier(false));
-  }, [boardType, loadingEarlier, previousCursor, stationKey]);
+  }, [activeBoard.previousCursor, boardType, loadingEarlier, stationKey]);
 
   const loadLater = useCallback(() => {
-    if (!nextCursor || loadingLater) return;
+    if (!activeBoard.nextCursor || loadingLater) return;
 
     setLoadingLater(true);
-    setError(null);
 
-    void getStationBoard(stationKey, boardType, { cursor: nextCursor })
+    void getStationBoard(stationKey, boardType, { cursor: activeBoard.nextCursor })
       .then((data) => {
-        setRows((current) =>
-          mergeBoardRows(current, currentBoardRows(data.rows, new Date().toISOString())),
-        );
-        setStationName((current) => current ?? data.stationName);
-        setProfile((current) => current ?? data.profile);
-        setNotices(data.notices);
-        setIncidents(data.incidents);
-        setOntology(data.ontology);
-        setNextCursor(data.nextCursor);
+        setBoards((current) => ({
+          ...current,
+          [boardType]: {
+            ...current[boardType],
+            rows: mergeBoardRows(
+              current[boardType].rows,
+              currentBoardRows(data.rows, new Date().toISOString()),
+            ),
+            nextCursor: data.nextCursor,
+            error: null,
+            lastReceivedAt: new Date().toISOString(),
+          },
+        }));
       })
       .catch((err) => {
-        setError(err instanceof Error ? err.message : "Failed to load later services");
+        setBoards((current) => ({
+          ...current,
+          [boardType]: {
+            ...current[boardType],
+            error: err instanceof Error ? err.message : "Failed to load later services",
+          },
+        }));
       })
       .finally(() => setLoadingLater(false));
-  }, [boardType, loadingLater, nextCursor, stationKey]);
-
-  const stateMatchesBoard = loadedBoardKey === boardKey;
-  const visibleRows = stateMatchesBoard ? rows : [];
-  const visibleStationName = stateMatchesBoard ? stationName : null;
-  const visibleProfile = stateMatchesBoard ? profile : null;
-  const visibleNotices = stateMatchesBoard ? notices : [];
-  const visibleIncidents = stateMatchesBoard ? incidents : [];
-  const visibleOntology = stateMatchesBoard ? ontology : undefined;
-  const visiblePreviousCursor = stateMatchesBoard ? previousCursor : null;
-  const visibleNextCursor = stateMatchesBoard ? nextCursor : null;
+  }, [activeBoard.nextCursor, boardType, loadingLater, stationKey]);
 
   const lastUpdatedAt = useMemo(() => {
-    return visibleRows.reduce<string | null>((latest, row) => {
+    const latestRowUpdate = activeBoard.rows.reduce<string | null>((latest, row) => {
       if (!latest) return row.updated_at;
       return row.updated_at > latest ? row.updated_at : latest;
     }, null);
-  }, [visibleRows]);
+    return latestRowUpdate ?? activeBoard.lastReceivedAt;
+  }, [activeBoard]);
 
   return {
-    stationName: visibleStationName,
-    profile: visibleProfile,
-    notices: visibleNotices,
-    incidents: visibleIncidents,
-    ontology: visibleOntology,
-    rows: visibleRows,
-    loading,
-    error,
+    stationName,
+    profile,
+    notices,
+    incidents,
+    ontology,
+    rows: activeBoard.rows,
+    loading: activeBoard.loading,
+    error: activeBoard.error ?? contextError,
     connected,
     lastUpdatedAt,
-    hasEarlierRows: visiblePreviousCursor !== null,
+    hasEarlierRows: activeBoard.previousCursor !== null,
     loadingEarlier,
     loadEarlier,
-    hasLaterRows: visibleNextCursor !== null,
+    hasLaterRows: activeBoard.nextCursor !== null,
     loadingLater,
     loadLater,
   };
+}
+
+function createEmptyBoards(): Record<BoardType, BoardCache> {
+  return {
+    departures: createEmptyBoard(),
+    arrivals: createEmptyBoard(),
+  };
+}
+
+function createEmptyBoard(): BoardCache {
+  return {
+    rows: [],
+    previousCursor: null,
+    nextCursor: null,
+    loading: true,
+    loaded: false,
+    error: null,
+    lastReceivedAt: null,
+  };
+}
+
+function cachedStationContext(stationKey: string): Promise<StationContextResponse> {
+  const cached = stationContextRequests.get(stationKey);
+  if (cached) return cached;
+
+  const request = getStationContext(stationKey).catch((error) => {
+    stationContextRequests.delete(stationKey);
+    throw error;
+  });
+  stationContextRequests.set(stationKey, request);
+  return request;
 }

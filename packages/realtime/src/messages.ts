@@ -159,8 +159,8 @@ export type StationBoardMessage =
       stationKey: string;
       boardType: "departures" | "arrivals";
       rows: StationBoardSnapshotRow[];
+      previousCursor: string | null;
       nextCursor: string | null;
-      ontology?: OntologyGraph;
       sentAt: string;
     }
   | {
@@ -221,9 +221,17 @@ export function parseStationBoardMessage(data: unknown): StationBoardMessage | n
     if (!Array.isArray(parsed.rows)) return null;
     const rows = parseStationBoardRows(parsed.rows);
     if (!rows) return null;
+    if (!isNullableString(parsed.previousCursor)) return null;
     if (!isNullableString(parsed.nextCursor)) return null;
-    const ontology = parseOntologyGraph(parsed.ontology);
-    return { type, stationKey, boardType, rows, nextCursor: parsed.nextCursor, ontology, sentAt };
+    return {
+      type,
+      stationKey,
+      boardType,
+      rows,
+      previousCursor: parsed.previousCursor,
+      nextCursor: parsed.nextCursor,
+      sentAt,
+    };
   }
 
   if (typeof serviceKey !== "string") {

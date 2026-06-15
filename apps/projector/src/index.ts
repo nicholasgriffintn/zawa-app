@@ -281,28 +281,7 @@ async function projectStationBoardRefreshEvent(
     limit: positiveIntegerValue(event.payload.limit, 8),
   });
   const snapshotEvent = await stationBoardProjectionEvent(board, event.ingestedAt);
-  if (!(await claimProcessedEvent(env.DB, snapshotEvent.id, event.ingestedAt))) {
-    stats.duplicates += 1;
-    if (
-      await markStationBoardRefreshed(
-        env.DB,
-        stationKey,
-        boardType,
-        event.ingestedAt,
-        board.rows.length,
-      )
-    ) {
-      stats.refreshWrites += 1;
-    }
-    return stats;
-  }
-
-  try {
-    mergeProjectionStats(stats, await projectBoardSnapshotEvent(env, snapshotEvent));
-  } catch (error) {
-    await releaseProcessedEvent(env.DB, snapshotEvent.id);
-    throw error;
-  }
+  mergeProjectionStats(stats, await projectBoardSnapshotEvent(env, snapshotEvent));
 
   return stats;
 }

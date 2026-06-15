@@ -48,6 +48,24 @@ export async function handleStationRoutes(
     return Response.json(await withStationListOntology(env.DB, { stations }));
   }
 
+  const contextMatch = url.pathname.match(/^\/api\/stations\/([^/]+)\/context$/);
+  if (contextMatch) {
+    const stationKey = decodeStationPathKey(contextMatch[1]);
+    if (!stationKey) return Response.json({ error: "Invalid station key" }, { status: 400 });
+    const context = await enrichStationBoardResponse(env.DB, {
+      stationKey,
+      stationName: null,
+      boardType: "departures",
+      rows: [],
+      profile: null,
+      notices: [],
+      incidents: [],
+      previousCursor: null,
+      nextCursor: null,
+    });
+    return Response.json(await withStationBoardOntology(env.DB, context));
+  }
+
   const departuresMatch = url.pathname.match(/^\/api\/stations\/([^/]+)\/departures$/);
   if (departuresMatch) {
     const stationKey = decodeStationPathKey(departuresMatch[1]);

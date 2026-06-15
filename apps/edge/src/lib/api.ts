@@ -20,6 +20,10 @@ import {
 import type { OntologyCatalog } from "@zawa/ontology";
 
 export type BoardType = "departures" | "arrivals";
+export type StationContextResponse = Pick<
+  StationBoardResponse,
+  "stationKey" | "stationName" | "profile" | "notices" | "incidents" | "ontology"
+>;
 
 export async function getStations(query = ""): Promise<StationListResponse> {
   const params = new URLSearchParams();
@@ -55,6 +59,20 @@ export async function getStationBoard(
   if (!res.ok) throw new Error("This station board is unavailable right now");
   const data = await res.json();
   return parseStationBoardResponse(data);
+}
+
+export async function getStationContext(stationKey: string): Promise<StationContextResponse> {
+  const res = await fetch(`/api/stations/${encodeURIComponent(stationKey)}/context`);
+  if (!res.ok) throw new Error("This station is unavailable right now");
+  const data = parseStationBoardResponse(await res.json());
+  return {
+    stationKey: data.stationKey,
+    stationName: data.stationName,
+    profile: data.profile,
+    notices: data.notices,
+    incidents: data.incidents,
+    ontology: data.ontology,
+  };
 }
 
 export async function getService(serviceKey: string): Promise<ServiceResponse> {
