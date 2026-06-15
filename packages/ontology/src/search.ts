@@ -43,6 +43,7 @@ export interface OntologySearchResponse {
 export interface OntologySearchOptions {
   query?: string | null;
   limit?: number;
+  resultKind?: OntologySearchResultKind;
 }
 
 interface SearchBranch {
@@ -61,7 +62,7 @@ export async function searchOntology(
   if (!query) return { query, results: [] };
 
   const limit = searchLimit(options.limit);
-  const branches = searchBranches(query);
+  const branches = searchBranches(query, options.resultKind);
   const branchLimit = Math.max(limit, 4);
   const branchResults = await Promise.all(
     branches.map((branch) => searchBranchResults(db, branch, branchLimit)),
@@ -100,16 +101,50 @@ async function searchBranchResults(
   return rows.results;
 }
 
-function searchBranches(query: string): SearchBranch[] {
+function searchBranches(
+  query: string,
+  resultKind: OntologySearchResultKind | undefined,
+): SearchBranch[] {
+  const branches =
+    resultKind === "station"
+      ? stationSearchBranches(query)
+      : [
+          classBranch(query),
+          propertyBranch(query),
+          thingBranch(query),
+          identifierBranch(query),
+          labelBranch(query),
+          classAssertionBranch(query),
+          tripleBranch(query),
+        ];
+
+  if (!resultKind) return branches;
+
+  return branches.map((branch) => resultKindBranch(branch, resultKind));
+}
+
+function stationSearchBranches(query: string): SearchBranch[] {
   return [
-    classBranch(query),
-    propertyBranch(query),
     thingBranch(query),
     identifierBranch(query),
     labelBranch(query),
     classAssertionBranch(query),
     tripleBranch(query),
   ];
+}
+
+function resultKindBranch(
+  branch: SearchBranch,
+  resultKind: OntologySearchResultKind,
+): SearchBranch {
+  return {
+    sql: `
+      SELECT *
+      FROM (${branch.sql}) search_results
+      WHERE search_results.result_kind = ?
+    `,
+    values: [...branch.values, resultKind],
+  };
 }
 
 function classBranch(query: string): SearchBranch {

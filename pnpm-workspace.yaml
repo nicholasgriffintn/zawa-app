@@ -16,18 +16,14 @@ catalog:
   tsx: ^4.21.0
   vite: npm:@voidzero-dev/vite-plus-core@latest
   vite-plus: latest
-  vitest: npm:@voidzero-dev/vite-plus-test@latest
   wrangler: ^4
   zod: ^4
 
 catalogMode: prefer
 overrides:
   vite: "catalog:"
-  vitest: "catalog:"
 peerDependencyRules:
   allowAny:
     - vite
-    - vitest
   allowedVersions:
     vite: "*"
-    vitest: "*"

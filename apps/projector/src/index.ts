@@ -64,6 +64,7 @@ export interface ProjectionStats {
   formationWrites: number;
   movementWrites: number;
   stationMessageWrites: number;
+  refreshWrites: number;
   serviceBroadcasts: number;
   boardBroadcasts: number;
   noops: number;
@@ -282,13 +283,17 @@ async function projectStationBoardRefreshEvent(
   const snapshotEvent = await stationBoardProjectionEvent(board, event.ingestedAt);
   if (!(await claimProcessedEvent(env.DB, snapshotEvent.id, event.ingestedAt))) {
     stats.duplicates += 1;
-    await markStationBoardRefreshed(
-      env.DB,
-      stationKey,
-      boardType,
-      event.ingestedAt,
-      board.rows.length,
-    );
+    if (
+      await markStationBoardRefreshed(
+        env.DB,
+        stationKey,
+        boardType,
+        event.ingestedAt,
+        board.rows.length,
+      )
+    ) {
+      stats.refreshWrites += 1;
+    }
     return stats;
   }
 
@@ -478,13 +483,17 @@ async function projectBoardSnapshotEvent(env: Env, event: RailEvent): Promise<Pr
     boardType,
     boardRows,
   );
-  await markStationBoardRefreshed(
-    env.DB,
-    snapshot.stationKey,
-    boardType,
-    event.ingestedAt,
-    snapshot.rows.length,
-  );
+  if (
+    await markStationBoardRefreshed(
+      env.DB,
+      snapshot.stationKey,
+      boardType,
+      event.ingestedAt,
+      snapshot.rows.length,
+    )
+  ) {
+    stats.refreshWrites += 1;
+  }
 
   for (const boardWrite of replaceResult.upsertedRows) {
     await broadcastStationBoardPatch(env, event, boardWrite);
@@ -635,6 +644,7 @@ function emptyProjectionStats(messages: number): ProjectionStats {
     formationWrites: 0,
     movementWrites: 0,
     stationMessageWrites: 0,
+    refreshWrites: 0,
     serviceBroadcasts: 0,
     boardBroadcasts: 0,
     noops: 0,
@@ -653,6 +663,7 @@ function mergeProjectionStats(target: ProjectionStats, source: ProjectionStats):
   target.formationWrites += source.formationWrites;
   target.movementWrites += source.movementWrites;
   target.stationMessageWrites += source.stationMessageWrites;
+  target.refreshWrites += source.refreshWrites;
   target.serviceBroadcasts += source.serviceBroadcasts;
   target.boardBroadcasts += source.boardBroadcasts;
   target.noops += source.noops;
@@ -665,7 +676,8 @@ function isNoopProjection(stats: ProjectionStats): boolean {
     stats.boardWrites === 0 &&
     stats.formationWrites === 0 &&
     stats.movementWrites === 0 &&
-    stats.stationMessageWrites === 0
+    stats.stationMessageWrites === 0 &&
+    stats.refreshWrites === 0
   );
 }
 

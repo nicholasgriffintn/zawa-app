@@ -245,7 +245,6 @@ export async function replaceReferenceStations(
 
   for (const row of rows) {
     const current = currentStations.get(row.station_key);
-    if (referenceStationMatchesCurrent(row, current)) continue;
 
     const stationId = stationThingId(row.station_key);
     const operatorId = row.station_operator ? operatorThingId(row.station_operator) : null;
@@ -273,6 +272,8 @@ export async function replaceReferenceStations(
       ],
       objectTriples: [{ predicateId: "rail:operatedBy", objectThingId: operatorId }],
     });
+    if (referenceStationMatchesCurrent(row, current)) continue;
+
     statements.push(referenceStationStatement(db, row, stationId, operatorId));
   }
 

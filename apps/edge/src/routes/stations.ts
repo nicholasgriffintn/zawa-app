@@ -1,5 +1,6 @@
 import type { RailEvent } from "@zawa/domain/events";
 import { searchReferenceStations } from "@zawa/db/queries/reference-data";
+import { createRailOntologySdk } from "@zawa/ontology";
 import { stationBoardProjectionEvent } from "@zawa/rdm/projection-events";
 import { getRdmStationBoard, type RdmServiceEnv } from "@zawa/rdm/services";
 import { nowIso } from "@zawa/shared/time";
@@ -8,6 +9,7 @@ import { isValidBoardCursor } from "../lib/board-cursor";
 import { currentStationBoard } from "../lib/board-window";
 import { enrichStationBoardResponse } from "../lib/operational-context";
 import { withStationBoardOntology, withStationListOntology } from "../lib/ontology";
+import { stationSummariesFromSearchResults } from "../lib/station-search-results";
 import { decodeStationPathKey } from "../lib/station-keys";
 
 const MAX_STATION_RESULTS = 20;
@@ -32,7 +34,17 @@ export async function handleStationRoutes(
 
   if (url.pathname === "/api/stations") {
     const query = url.searchParams.get("q") ?? "";
-    const stations = await searchReferenceStations(env.DB, query, MAX_STATION_RESULTS);
+    if (!query.trim()) {
+      const stations = await searchReferenceStations(env.DB, query, MAX_STATION_RESULTS);
+      return Response.json(await withStationListOntology(env.DB, { stations }));
+    }
+
+    const search = await createRailOntologySdk(env.DB).search({
+      query,
+      limit: MAX_STATION_RESULTS,
+      resultKind: "station",
+    });
+    const stations = stationSummariesFromSearchResults(search.results);
     return Response.json(await withStationListOntology(env.DB, { stations }));
   }
 

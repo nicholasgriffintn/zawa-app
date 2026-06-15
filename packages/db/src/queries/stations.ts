@@ -317,8 +317,8 @@ export async function markStationBoardRefreshed(
   boardType: "departures" | "arrivals",
   refreshedAt: string,
   rowCount: number,
-): Promise<void> {
-  await db
+): Promise<boolean> {
+  const result = await db
     .prepare(
       `
       INSERT INTO station_board_refreshes (
@@ -344,6 +344,8 @@ export async function markStationBoardRefreshed(
       stationKey,
     )
     .run();
+
+  return writeAccepted(result);
 }
 
 export async function listStationBoardsDueForRefresh(
